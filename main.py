@@ -30,7 +30,7 @@ KEYWORDS = [
     "电视", "電視", "高清", "News"
 ]
 
-# 3. 【黑名單升級】強力過濾非香港頻道
+# 3. 黑名單關鍵字 (包含這些字的一律丟棄)
 BLOCK_KEYWORDS = [
     # 來自你的日誌分析 (美國/英語台)
     "FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", 
@@ -43,10 +43,10 @@ BLOCK_KEYWORDS = [
     "CCTV", "CGTN", "鳳凰", "凤凰", "華麗", "星河", "延时", "測試"
 ]
 
-# 4. 頻道排序優先級 (越上面越靠前)
+# 4. 【已更新】頻道排序優先級 (越上面越靠前)
 ORDER_KEYWORDS = [
     "翡翠", "無線新聞", "明珠", "J2", "J5", "財經",  # TVB系列
-    "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",  # Viu系列
+    "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",  # Viu系列 (包含你加入的大小寫變體)
     "HOY", "奇妙", "有線",                         # HOY/Cable系列
     "港台電視31", "RTHK 31",                      # RTHK系列
     "港台電視32", "RTHK 32",
