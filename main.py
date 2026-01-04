@@ -4,15 +4,14 @@ import datetime
 
 # --- 設定區 ---
 
-#https://apexlegends.#htt#A/
-# 這些源通常包含經過解鎖或維護的鏈接
+# 1. 來源列表 (請只放有效的 .m3u 鏈接，不要放軟體下載頁)
 SOURCE_URLS = [
-"https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-"https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
-"https://raw.githubusercontent.com/live-television/m3u/master/Hong%20Kong.m3u"
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
+    "https://raw.githubusercontent.com/live-television/m3u/master/Hong%20Kong.m3u"
 ]
 
-https://obsstudio.app/#A/
+# 2. 關鍵字過濾 (只保留這些頻道)
 KEYWORDS = ["ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "無線新聞", "有線新聞", "Now", "港台", "翡翠", "明珠"]
 
 https://obsstudio.app/#A/穩定源 (不管檢測結果如何，強制加入，保證有台可看)
