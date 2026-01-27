@@ -12,7 +12,7 @@
 
 | 線路 | 鏈接 (URL) | 推薦度 |
 | :--- | :--- | :--- |
-| **CDN 加速 (推薦)** | `https://cdn.jsdelivr.net/gh/<你的用戶名>/<倉庫名稱>@main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
+| **CDN 加速 (推薦)** | `https://raw.gh.registry.cyou/<你的用戶名>/<倉庫名稱>/refs/heads/main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
 | **GitHub Raw** | `https://raw.githubusercontent.com/<你的用戶名>/<倉庫名稱>/main/hk_live.m3u` | ⭐⭐⭐ |
 
 > ⚠️ **注意**：請將 `<你的用戶名>` 和 `<倉庫名稱>` 替換為你實際的 GitHub ID 和倉庫名 (例如 `hk-tv-auto`)。
