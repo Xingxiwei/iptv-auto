@@ -26,6 +26,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
     "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
+    "https://iptv-org.github.io/iptv/index.m3u",
     "https://iptv-org.github.io/iptv/countries/hk.m3u",
     "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
