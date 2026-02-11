@@ -35,9 +35,10 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
     "https://epg.pw/test_channels_hong_kong.m3u",
     "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
-    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u"
-    "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u"
-    "https://live.hacks.tools/iptv/languages/singapore.m3u"
+    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u",
+    "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u",
+    "https://live.hacks.tools/iptv/languages/singapore.m3u",
+    "https://github.com/xiweiwong/iptv/blob/master/iptv.m3u"
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
