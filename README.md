@@ -1,6 +1,6 @@
 # 📺 HK IPTV Auto Updater | 香港電視台直播源自動更新
 
-![Update Status](https://github.com/sammy0101/hk-iptv-auto/actions/workflows/main.yml/badge.svg)
+![Update Status](https://github.com/xiweiwong/hk-iptv-auto/actions/workflows/main.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 這是一個基於 **GitHub Actions** 的自動化 IPTV 聚合項目。
@@ -14,8 +14,8 @@
 
 | 線路 | 鏈接 (URL) | 推薦度 |
 | :--- | :--- | :--- |
-| **CDN 加速 (推薦)** | `https://raw.gh.registry.cyou/sammy0101/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
-| **GitHub Raw** | `https://raw.githubusercontent.com/sammy0101/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐ |
+| **CDN 加速 (推薦)** | `https://raw.gh.registry.cyou/xiweiwong/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐⭐⭐ |
+| **GitHub Raw** | `https://raw.githubusercontent.com/xiweiwong/hk-iptv-auto/refs/heads/main/hk_live.m3u` | ⭐⭐⭐ |
 
 > ⚡ **CDN 加速服務由 [cmliussss](https://blog.cmliussss.com/) 提供，特此感謝！**
 > 
@@ -81,8 +81,8 @@
 編輯 `main.py` 中的 `ORDER_KEYWORDS` 列表。越上面的關鍵字，優先級越高。
 
 ### 4. 修改訂閱鏈接 (Update Subscription URL)
-Fork 之後，`README.md` 顯示的訂閱鏈接仍然指向原作者 (`sammy0101`) 的倉庫。
-請務必編輯 `README.md`，將訂閱鏈接中的 `sammy0101` 替換為你的 GitHub 用戶名，否則你的用戶將無法獲取你更新的列表。
+Fork 之後，`README.md` 顯示的訂閱鏈接仍然指向原作者 (`xiweiwong`) 的倉庫。
+請務必編輯 `README.md`，將訂閱鏈接中的 `xiweiwong` 替換為你的 GitHub 用戶名，否則你的用戶將無法獲取你更新的列表。
 
 *   **CDN 格式範例**:
     `https://raw.gh.registry.cyou/<你的用戶名>/<倉庫名稱>/refs/heads/main/hk_live.m3u`
