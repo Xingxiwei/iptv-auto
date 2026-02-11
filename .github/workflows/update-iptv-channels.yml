@@ -1,0 +1,37 @@
+name: Update IPTV Channel List
+
+on:
+  schedule:
+    # 每天两次（香港时间08:00和20:00）运行，UTC 00:00和12:00
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:  # 允許手動觸發
+
+permissions:
+  contents: write  # 允许写入仓库内容
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run script to update IPTV channels
+      run: python update_channels.py  # 假设你的 Python 脚本名为 update_channels.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add hong_kong.m3u
+        git commit -m "Auto-update IPTV channel list" || echo "No changes to commit"
+        git push
