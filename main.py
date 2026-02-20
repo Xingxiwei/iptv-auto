@@ -38,14 +38,22 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u",
     "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u",
     "https://live.hacks.tools/iptv/languages/singapore.m3u",
-    "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u"
+    "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+    "https://raw.githubusercontent.com/LiuYi0526/IPTVnew/main/IPTVnews.txt",
+    "https://cdn.jsdelivr.net/gh/LiuYi0526/IPTVnew@main/IPTVnews.txt",
+    "https://fastly.jsdelivr.net/gh/LiuYi0526/IPTVnew@main/IPTVnews.txt",
+    "https://testingcf.jsdelivr.net/gh/LiuYi0526/IPTVnew@main/IPTVnews.txt",
+    "https://ghfast.top/https://raw.githubusercontent.com/LiuYi0526/IPTVnew/main/IPTVnews.txt",
+    "https://gh-proxy.com/raw.githubusercontent.com/LiuYi0526/IPTVnew/main/IPTVnews.txt",
+    "https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u"
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
 KEYWORDS = [
     "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
     "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", 
-    "廣東", "珠江", "广州", "廣州", "大灣區",
+    "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", "凤凰"
 ]
 
 # 3. 黑名單關鍵字 (包含這些字的一律丟棄)
@@ -61,7 +69,7 @@ BLOCK_KEYWORDS = [
     # 來自你的日誌分析 (大陸/澳門台)
     "浙江", "杭州", "西湖",  # 排除 "杭州西湖明珠"
     "澳門", "Macau", "有線 CH", "互動新聞",           # 排除澳門有線
-    "CCTV", "CGTN", "鳳凰", "凤凰", "華麗", "星河", "延时", "測試", "iHOY", "福建"
+    "CCTV", "CGTN",  "華麗", "星河", "延时", "測試", "iHOY", "福建"
 ]
 
 # 4. 【已更新】頻道排序優先級 (越上面越靠前)
