@@ -190,7 +190,7 @@ def generate_m3u(channels):
     
     for item in final_list:
         final_name = item["name"].replace('臺', '台')
-        content += f'#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
+        content += f'#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
         content += f'{item["url"]}\n'
 
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
