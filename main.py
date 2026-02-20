@@ -23,7 +23,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/3100%E4%B8%AA%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u8",
     "https://raw.githubusercontent.com/billy21/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%B9%BF%E4%B8%9C%E8%81%94%E9%80%9A.m3u",
     "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
-    "https://raw.githubusercontent.com/hygdmm/myiptv/refs/heads/main/iTV.txt,
+    "https://raw.githubusercontent.com/hygdmm/myiptv/refs/heads/main/iTV.txt",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
