@@ -45,7 +45,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
     "https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u",
-    "https://raw.githubusercontent.com/xiweiwong/hk-iptv-auto/refs/heads/main/xg66.txt"
+    "https://raw.githubusercontent.com/xiweiwong/hk-iptv-auto/refs/heads/main/xg66.m3u"
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
