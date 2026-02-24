@@ -45,7 +45,11 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
     "https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u",
-    "https://raw.githubusercontent.com/xiweiwong/hk-iptv-auto/refs/heads/main/xg66.m3u"
+    "https://raw.githubusercontent.com/xiweiwong/hk-iptv-auto/refs/heads/main/xg66.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", # 高清
+    "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
+    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
+    "https://raw.githubusercontent.com/Guovern/tv-list/main/m3u/live.m3u"     # 常用更新
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
