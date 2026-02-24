@@ -2,6 +2,7 @@ import requests
 import re
 import datetime
 from opencc import OpenCC
+from concurrent.futures import ThreadPoolExecutor # 加入多線程支援
 
 # 初始化繁簡轉換器
 cc = OpenCC('s2t')
@@ -94,21 +95,24 @@ STATIC_CHANNELS = [
 
 # --- 邏輯區 ---
 
-def check_url(url):
-    """檢測鏈接是否有效 (超時 2 秒)"""
-    try:
-        response = requests.get(url, timeout=2, stream=True)
-        return response.status_code == 200
-    except:
-        return False
+cc = OpenCC('s2t')
 
-def get_sort_key(item):
-    """計算頻道的排序權重"""
-    name = item["name"]
-    for index, keyword in enumerate(ORDER_KEYWORDS):
-        if keyword in name:
-            return index
-    return 999
+def check_url(item):
+    """檢測鏈接是否有效 (用 HEAD 請求會快好多)"""
+    url = item['url']
+    try:
+        # 優先用 HEAD 請求，唔得先用 GET
+        response = requests.head(url, timeout=3, allow_redirects=True)
+        if response.status_code == 200:
+            return item
+    except:
+        try:
+            response = requests.get(url, timeout=3, stream=True)
+            if response.status_code == 200:
+                return item
+        except:
+            pass
+    return None
 
 def fetch_and_parse():
     found_channels = []
