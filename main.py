@@ -58,6 +58,18 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
 ]
 
+# 新增：手動單個源清單
+MANUAL_SINGLE_CHANNELS = [
+    {"name": "翡翠台", "url": "https://HaNoiIPTV.short.gy/Que_huong_HaNoiIPTV-TVB_Fei_Cui_Tai"},
+    {"name": "翡翠台", "url": "http://php.jdshipin.com/TVOD/iptv.php?id=fct2"},
+    {"name": "翡翠台", "url": "http://php.jdshipin.com/TVOD/iptv.php?id=fct3"},
+    {"name": "翡翠台", "url": "http://74.91.26.218:82/live/jade.m3u8"},
+    {"name": "翡翠台", "url": "http://mytv.cdn.loc.cc/o12.php?id=fct"},
+    {"name": "翡翠台", "url": "http://r.jdshipin.com/thuYX"},
+    {"name": "翡翠台", "url": "https://o11.163189.xyz/stream/tvb/fct4k/"},
+    {"name": "翡翠台", "url": "http://r.jdshipin.com/qrfbg"}
+]
+
 # 2. 包含關鍵字 (必須包含這些字才抓取)
 KEYWORDS = [
     "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
@@ -103,27 +115,26 @@ STATIC_CHANNELS = [
 cc = OpenCC('s2t')
 
 def check_url(item):
-    """檢測鏈接是否有效 (加入 Headers 避免封鎖)"""
     url = item['url']
-    
-    # 1. 新增：身分證 (Headers)
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Referer': url # 自動將 Referer 設為網址本身，破解部分防盜鏈
     }
     
     try:
-        # 2. 修改：加入 headers=headers
+        # 嘗試 1: 用 HEAD 請求 (最快)
         response = requests.head(url, timeout=3, headers=headers, allow_redirects=True)
         if response.status_code == 200:
             return item
+            
+        # 嘗試 2: 如果 HEAD 唔得，用 GET 請求並只讀取頭部 (stream=True)
+        # 呢招對付 jdshipin 呢類阻擋 HEAD 嘅源好有效
+        response = requests.get(url, timeout=3, headers=headers, stream=True)
+        if response.status_code == 200:
+            response.close() # 確定通咗就即刻斷開，唔好嘥流量
+            return item
     except:
-        try:
-            # 3. 修改：加入 headers=headers
-            response = requests.get(url, timeout=3, headers=headers, stream=True)
-            if response.status_code == 200:
-                return item
-        except:
-            pass
+        pass
     return None
 
 def fetch_and_parse():
@@ -229,7 +240,7 @@ def generate_m3u(channels):
         f.write(content)
 
     print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
-
+    
 def get_sort_key(item):
     """根據 ORDER_KEYWORDS 決定頻道排序權重"""
     name = item["name"]
@@ -240,5 +251,15 @@ def get_sort_key(item):
     return 999  # 冇匹配到關鍵字嘅排最後
 
 if __name__ == "__main__":
+    # 1. 抓取網絡上的所有訂閱源
     candidates = fetch_and_parse()
+    
+    # 2. 【新增】將手動單條連結注入進去
+    print(f"\n📦 正在注入 {len(MANUAL_SINGLE_CHANNELS)} 個手動單源...", flush=True)
+    for item in MANUAL_SINGLE_CHANNELS:
+        # 同樣做繁簡轉換，確保排序同 Logo 正常
+        item['name'] = cc.convert(item['name']).replace('臺', '台')
+        candidates.append(item)
+        
+    # 3. 開始統一校驗 (呢度會包含埋你手動加嗰幾條)
     generate_m3u(candidates)
