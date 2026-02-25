@@ -1,7 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-02-23 13:56:14
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東 Ⅰ 韶關公共台 (720p).png",廣東 Ⅰ 韶關公共台 (720p)
-https://www.sgmsw.cn/videos/tv/201805/1308/9P424TC5M000AFO13CXK6GN6BOA889D2/hls/live.m3u8
+# Update: 2026-02-25 02:16:18
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
 http://112.27.235.94:8000/hls/30/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
@@ -34,12 +32,26 @@ https://iptv.catvod.com/live.php?id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&line=2
 http://23.237.228.134/live6/guangdong.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
 http://38.75.136.137:98/gslb/dsdqpub/gdwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
-http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
+https://stream1.freetv.fun/yan-dong-zhu-jiang-16.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
 https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
 http://php.jdshipin.com/PLTV/iptv.php?id=gdty
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東新聞.png",廣東新聞
+https://stream1.freetv.fun/yan-dong-xin-wen-27.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東新聞.png",廣東新聞
+https://stream1.freetv.fun/yan-dong-xin-wen-20.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東新聞.png",廣東新聞
+https://stream1.freetv.fun/yan-dong-xin-wen-2.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
+https://stream1.freetv.fun/yan-dong-min-sheng-9.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
+https://stream1.freetv.fun/yan-dong-min-sheng-35.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
+https://stream1.freetv.fun/yan-dong-min-sheng-16.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
+https://stream1.freetv.fun/yan-dong-min-sheng-21.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
 http://php.jdshipin.com/TVOD/iptv.php?id=gdty
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
@@ -64,6 +76,8 @@ http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=2030&tk=a0c4f6cfaba3$LR•IPV4『线�
 http://119.32.12.17:2901/udp/224.1.100.4:11111$LR•IPV4『线路4』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
 http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=1648&tk=a0c4f6cfaba3$LR•IPV4『线路11』
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
+http://dd.ddzb.fun/php/migu.php?id=gdws$LR•IPV4『线路63』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
 http://120.76.248.139/live/bfgd/4200000092.m3u8$LR•IPV4『线路110』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
@@ -102,6 +116,28 @@ http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b56237284
 http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
+https://stream1.freetv.fun/yan-zhou-zong-he-19.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州影視.png",廣州影視
+https://stream1.freetv.fun/yan-zhou-ying-shi-6.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州影視.png",廣州影視
+https://stream1.freetv.fun/yan-zhou-ying-shi-15.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州影視.png",廣州影視
+https://stream1.freetv.fun/yan-zhou-ying-shi-7.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州影視.png",廣州影視
+https://stream1.freetv.fun/yan-zhou-ying-shi-28.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州影視.png",廣州影視
+https://stream1.freetv.fun/yan-zhou-ying-shi-25.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
+https://stream1.freetv.fun/yan-zhou-jing-sai-34.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
+https://stream1.freetv.fun/yan-zhou-jing-sai-38.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
+https://stream1.freetv.fun/yan-zhou-jing-sai-32.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
+https://stream1.freetv.fun/yan-zhou-jing-sai-2.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/廣州競賽.png",廣州競賽
+https://stream1.freetv.fun/yan-zhou-jing-sai-33.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 https://iptv.catvod.com/live.php?id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&line=1
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
@@ -111,17 +147,9 @@ https://iptv.catvod.com/live.php?id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 https://iptv.catvod.com/live.php?id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&line=2
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
-https://www.freetv.top/migu/608917627.m3u8?migutoken=913ec7608066b2e139e10a729ed6e0b277096bf7d1577f04dec2f036a15f6db88631747d218643efc7515ff520286e2a56bc4f2231e6d692da49f8d555d3291bbba71e8f2993d5487b41afa6bf$LR•IPV4『线路6』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
-https://www.freetv.top/migu/608917627.m3u8?migutoken=bad0a45eea94649f2e7f1b35e1d98d034b874a02984a76abb21e4537dee28f974e6da241dc7705109722be71c8b1302302b51cd4cb06c69ca55fdcf7279d415e0a0fce7c492b6842956ab34fcc$LR•IPV4『线路15』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
-https://www.freetv.top/migu/608917627.m3u8?migutoken=22c28ab72744cd3ae1500fcedd9aa645eb0c35326cccb8cc6253c912a2fbdadb109d5f005d7dbbb62dbcb2e1f9a30bfa1935a4a046787bb5ac3e9ac1b5b654c16c2f7753fc37d2d51b2916310b$LR•IPV4『线路19』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
-https://www.freetv.top/migu/608917627.m3u8?migutoken=6e23ed23803d2776218fbd5b6931d4dd0d0a20d0269ca0da6b2efaaf101f71c62689ec1d6f73e16a10d1b756f7e23f0de494b881e2bc39c12250715721f84c185577680003f363869dba1b7e90$LR•IPV4『线路20』
+http://dd.ddzb.fun/php/migu.php?id=dwqws$LR•IPV4『线路10』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=3118&tk=a0c4f6cfaba3$LR•IPV4『线路32』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
-http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=5406&tk=23a9aca1f79f$LR•IPV4『线路34』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
 http://php.jdshipin.com/smt.php?id=jade_twn
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
@@ -130,6 +158,8 @@ http://php.jdshipin.com/TVOD/iptv.php?id=fct2
 http://php.jdshipin.com/TVOD/iptv.php?id=fct3
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/黃金翡翠.png",黃金翡翠
 http://php.jdshipin.com/smt.php?id=Tvbjade
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://bxtv.3a.ink/api.php?id=fct
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/qClQf
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -140,8 +170,6 @@ http://r.jdshipin.com/62WM7
 http://r.jdshipin.com/n90gt
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/GeWKr
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://iptv.4666888.xyz/iptv2A.php?id=34
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/TVB翡翠台.png",TVB翡翠台
 http://cdn9.163189.xyz/smt1.1.php?id=jade_twn
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/TVB翡翠台 1080P.png",TVB翡翠台 1080P
@@ -154,8 +182,6 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=j1
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://aktv.top/AKTV/live/aktv/null/AKTV.m3u8$LR•IPV4『线路1』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://grandprix2023.asuscomm.com:8889/bysid/1.m3u8$LR•IPV4『线路6』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://cdn9.163189.xyz/smt1.1.php?id=jade_twn$LR•IPV4『线路10』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
@@ -171,11 +197,27 @@ http://r.jdshipin.com/GeWKr?id=fct406$LR•IPV4『线路30』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://r.jdshipin.com/GeWKr?id=fct720$LR•IPV4『线路31』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=0401&tk=2aca1ad9a849$LR•IPV4『线路39』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
 http://fm1077.serv00.net/Smart.php?id=jade_twn$LR•IPV4『线路41』
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]TVB 翡翠台 *sg.png",[BD]TVB 翡翠台 *sg
+https://stream1.freetv.fun/1fd385566e3e98d4ed278cd58366e1437d6f8126c643614886559c91b243fe9f.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠.png",[BD]翡翠
+https://stream1.freetv.fun/b1128a129ebb9fd5ddde711ab565c82831400d80e5aa6aa9822e6c1b33ed95c5.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠.png",[BD]翡翠
+https://stream1.freetv.fun/7626cd1e0830deb6cc37d51b751648e27e25c8136a22f61f6bb6ce5a85dcb0c4.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠.png",[BD]翡翠
+https://stream1.freetv.fun/8a31735d012894cb8c275ebf1a898a3bb42f7201dd54d6d1201d724877fd9c19.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠.png",[BD]翡翠
+https://stream1.freetv.fun/169afe453d043b4888d3e0684163a3c8e7c13738df07bcfa187dcd05223e3891.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠.png",[BD]翡翠
+https://stream1.freetv.fun/363a02513a5dbd6658d52b26c733386779319595957dce38c539ddb689d7b401.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠[geo-blocked].png",[BD]翡翠[geo-blocked]
+https://stream1.freetv.fun/96be57df137f3e952c37d15c81c54511223f65ab2929549598ef3c601f7f0add.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]翡翠台2.png",[BD]翡翠台2
+https://stream1.freetv.fun/3b26a0cce2dba229df630c62d4d81ccef7f759bcc8b43365152f04cb40e21f74.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
 http://www.liveviptv.xyz/tv/tvb.php?vid=wxxw
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/無線新聞台.png",無線新聞台
+http://bxtv.3a.ink/api.php?id=wxxw
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
 http://r.jdshipin.com/CkuBd
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/TVB無線新聞.png",TVB無線新聞
@@ -185,11 +227,9 @@ http://php.jdshipin.com:8880/smt.php?id=inews_twn
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/無線新聞台.png",無線新聞台
 http://php.jdshipin.com/TVOD/iptv.php?id=wxxw
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://bxtv.3a.ink/api.php?id=mz
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://r.jdshipin.com/ZQ4kN
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://r.jdshipin.com/jUx8K
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://iptv.4666888.xyz/iptv2A.php?id=29
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/TVB明珠台.png",TVB明珠台
 http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
@@ -197,7 +237,13 @@ http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://8.218.84.3:8885/live/NlAhgdR475_p9pHeKE1G1rILoVl18Qqe36jUsiWqY5S26LQzNA-82o0LSiNo13OG6N_9Sxh8KQOfU_hyixKd9p3RIjy9Vegh_fQh33K2M2NZraQQ1HZdgnhMv-nAGJ-d4MbxOxzqnvZPnAic8L4i1ZYyIUsjL0Mb_JYCTfOEeYG4a4ZmNxH1PapVrrrSAMArc5rJg-WYPBvhMY1MKjlc6-X5SNSqoDF5Tup-0St4sKsbOeHdQlunrOCJHDiDSYN2nf8xW_Lta052t6RMBoKETw.m3u8?u=1757123819
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNvFurqphvyqxUIU84OjKVCwFxMq9iUGeE1gxpzjLoQWTWir772RiW9xP-7Vhz6iB1D9htxteCYrrT1zajd8n21mzIJri_TqeOEAMPrPGtUZA8iM9Ah11IK4uG0LIlw3KaFdk4fwauAyKHAjgL4Tyq7kG4ymrDqKy67Wfy53YIT4PWa-8mCkC3Ffa1jwixSqREtjad3qPhQLyoz7LTqA-Nn1wk3l8-kIQVmAF-lsHkY0Gti7mZdIQ.m3u8?u=1756878715
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
 http://aktv.top/AKTV/live/aktv/null-2/AKTV.m3u8$LR•IPV4
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]明珠.png",[BD]明珠
+https://stream1.freetv.fun/e56abfec74a8d135ddfc2c074a81751b6fc41d0272d5f5519c218b2e56d3265f.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]明珠.png",[BD]明珠
+https://stream1.freetv.fun/18147fe9227d749afdbf2b79ad6a6182ecd2276f2338a696d0c23d998e2763b2.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/J2.png",J2
 http://fm1077.serv00.net/Smart.php?id=j2_twn$LR•IPV4
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/J2 (1080p).png",J2 (1080p)
@@ -208,22 +254,34 @@ https://epg.pw/stream/0fddc0600d3868b05ad741d46294410aebca0fdc4fada5028dc54e624b
 http://r.jdshipin.com/vSJvl
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
 http://r.jdshipin.com/TcKr2
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
 http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8$LR•IPV4『线路1』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
 https://live.hkdvb.com/hls/live/99.m3u8?token=631170156112507&edge=live.tvfree.sbs$LR•IPV4『线路2』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/566447a554a11bb540e5e37ea32162caa2959fefd3707625f70de6ac96255364.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/acf28668e5790e2d2ac642051e52d00b0ea2372b79f0526617aa30a9af34b16b.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]Viutv *sg.png",[BD]Viutv *sg
+https://stream1.freetv.fun/45181db55db70a3fc349faf2ef2b901599a9cbc7106f2674134cac2db74b2f81.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/855fcf2cb6242c3bbf91d073a966eefcecb239f58f03460b4947d32ee7785d2c.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/HOY TV.png",HOY TV
 http://r.jdshipin.com/sFw4S
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/HOY78.png",HOY78
 http://cdn.163189.xyz/live/hoy/stream.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/HOY TV.png",HOY TV
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]HOY 77 *sg.png",[BD]HOY 77 *sg
+https://stream1.freetv.fun/7dc8bf470430004791ec5e7712e3eb2087cc07d7e8443a6b1843a59946a0fdcf.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/HOY TV (720p).png",HOY TV (720p)
+http://media.fantv.hk/m3u8/archive/channel2.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/香港有線新聞.png",香港有線新聞
 https://epg.pw/stream/4c65fc12a950810e9f068c55b2abf43cf7937762e9c5d4d44381205743c731bf.ctv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/有線新聞.png",有線新聞
@@ -232,10 +290,10 @@ http://61.10.2.141/live_freedirect/freehd209_h.live/playlist.m3u
 http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/有線新聞台.png",有線新聞台
 https://epg.pm/stream/7f7227d59a7dce31cf6910bcdb4ed741f8fb5994cecb87d2bba38adf33e6c490.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/有線新聞.png",有線新聞
+http://iptv.4666888.xyz/iptv2A.php?id=31
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/港台電視31 (官方).png",港台電視31 (官方)
 https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/RTHK TV 31 (港台電視31) (360p) [Geo-blocked].png",RTHK TV 31 (港台電視31) (360p) [Geo-blocked]
-https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/RTHK 31.png",RTHK 31
 https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/港台電視32 (官方).png",港台電視32 (官方)
@@ -246,6 +304,8 @@ https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
 http://aktv.top/AKTV/live/aktv/now/AKTV.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
 https://cdn6.163189.xyz/live/fhhk/stream.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰香港台.png",鳳凰香港台
+https://epg.pw/stream/27b49ba568efc8dcc9af6a79ec06ffd4a2e354e3e2060143be83fca695edf46e.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
@@ -276,14 +336,16 @@ http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.flv
 http://30a-tv.com/darcizzle.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_383.png",Unknown_383
 http://92.50.128.180/utv/1358/index.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2600.png",Unknown_2600
-http://9cc8074b.melpakomn.ru/iptv/ZGUA5RKA46DPDQ/245/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1703.png",Unknown_1703
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1700.png",Unknown_1700
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1812.png",Unknown_1812
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1791.png",Unknown_1791
+http://antvlive.ab5c6921.cdnviet.com/antv/chunklist.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1773.png",Unknown_1773
+http://antvlive.ab5c6921.cdnviet.com/antv/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_358.png",Unknown_358
 http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2535.png",Unknown_2535
@@ -338,6 +400,8 @@ http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xiamen3_2/index.m3u8
 http://cdn.adultiptv.net/blonde.m3u8?streamType=livеhls
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_510.png",Unknown_510
 http://cdn.adultiptv.net/compilation.m3u8?streamType=live
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_902.png",Unknown_902
+http://cdn12.mudu.tv/uploads/106151/640_480/9f30b41065d660242797a95abaf5bff7.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1692.png",Unknown_1692
 http://cdn-live1.qvc.jp/iPhone/800/800.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_385.png",Unknown_385
@@ -410,8 +474,10 @@ http://godsong.bs2dl.yy.com/dmQ4MWQ1NTBlZDNkYWI1Njc4NWE5N2UyZmIyYjg2NTJkMTkzMjE1
 http://godsong.bs2dl.yy.com/dmY2YWNiMDBmMDk0ZmI1NDViMjZlYmVmY2NlOWUyY2Q2MTkzMTc2MDg3NThtYw
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2021.png",Unknown_2021
 http://haiyan.liveyun.hoge.cn/xwpd/sd/live.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_452.png",Unknown_452
-http://iptv.tapesh.tv/tapesh/playlist.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1770.png",Unknown_1770
+http://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2592.png",Unknown_2592
+http://hls-igi.cdnvideo.ru/igi/igi_sq/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2657.png",Unknown_2657
 http://jmc-live.ercdn.net/alistiqama/alistiqama_576p.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1994.png",Unknown_1994
@@ -486,6 +552,8 @@ http://live.xmcdn.com/live/1396/64.m3u8
 http://live.xmcdn.com/live/15/64.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1406.png",Unknown_1406
 http://live.xmcdn.com/live/16/64.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1504.png",Unknown_1504
+http://live.xmcdn.com/live/1678/64.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1505.png",Unknown_1505
 http://live.xmcdn.com/live/1679/64.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1530.png",Unknown_1530
@@ -590,6 +658,8 @@ http://ls.qingting.fm/live/1259.m3u8
 http://ls.qingting.fm/live/1260.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1542.png",Unknown_1542
 http://ls.qingting.fm/live/1262.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1608.png",Unknown_1608
+http://ls.qingting.fm/live/1263.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1707.png",Unknown_1707
 http://ls.qingting.fm/live/1271.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1705.png",Unknown_1705
@@ -602,6 +672,8 @@ http://ls.qingting.fm/live/1274.m3u8
 http://ls.qingting.fm/live/1275.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1791.png",Unknown_1791
 http://ls.qingting.fm/live/1286.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1647.png",Unknown_1647
+http://ls.qingting.fm/live/1289.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1646.png",Unknown_1646
 http://ls.qingting.fm/live/1291.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1730.png",Unknown_1730
@@ -624,6 +696,8 @@ http://ls.qingting.fm/live/1601.m3u8
 http://ls.qingting.fm/live/1602.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1739.png",Unknown_1739
 http://ls.qingting.fm/live/1610.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1737.png",Unknown_1737
+http://ls.qingting.fm/live/1611.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1573.png",Unknown_1573
 http://ls.qingting.fm/live/1611381.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1742.png",Unknown_1742
@@ -674,6 +748,8 @@ http://ls.qingting.fm/live/1754.m3u8
 http://ls.qingting.fm/live/1756.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1610.png",Unknown_1610
 http://ls.qingting.fm/live/1757.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1609.png",Unknown_1609
+http://ls.qingting.fm/live/1758.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1588.png",Unknown_1588
 http://ls.qingting.fm/live/1840.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1700.png",Unknown_1700
@@ -682,6 +758,8 @@ http://ls.qingting.fm/live/1862.m3u8
 http://ls.qingting.fm/live/1902.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1635.png",Unknown_1635
 http://ls.qingting.fm/live/1903.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1630.png",Unknown_1630
+http://ls.qingting.fm/live/1909.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1622.png",Unknown_1622
 http://ls.qingting.fm/live/1910.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1562.png",Unknown_1562
@@ -716,6 +794,8 @@ http://ls.qingting.fm/live/23797.m3u8
 http://ls.qingting.fm/live/23801.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1704.png",Unknown_1704
 http://ls.qingting.fm/live/23859.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1709.png",Unknown_1709
+http://ls.qingting.fm/live/23861.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1708.png",Unknown_1708
 http://ls.qingting.fm/live/23863.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1710.png",Unknown_1710
@@ -732,6 +812,10 @@ http://ls.qingting.fm/live/23927.m3u8
 http://ls.qingting.fm/live/23929.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1747.png",Unknown_1747
 http://ls.qingting.fm/live/23933.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1750.png",Unknown_1750
+http://ls.qingting.fm/live/23935.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1751.png",Unknown_1751
+http://ls.qingting.fm/live/23937.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1645.png",Unknown_1645
 http://ls.qingting.fm/live/24173.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1644.png",Unknown_1644
@@ -772,6 +856,8 @@ http://ls.qingting.fm/live/33446.m3u8
 http://ls.qingting.fm/live/336.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1465.png",Unknown_1465
 http://ls.qingting.fm/live/339.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1734.png",Unknown_1734
+http://ls.qingting.fm/live/3400403.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1733.png",Unknown_1733
 http://ls.qingting.fm/live/3400408.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1377.png",Unknown_1377
@@ -808,6 +894,8 @@ http://ls.qingting.fm/live/4596.m3u8
 http://ls.qingting.fm/live/468.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1546.png",Unknown_1546
 http://ls.qingting.fm/live/470.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1543.png",Unknown_1543
+http://ls.qingting.fm/live/471.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1545.png",Unknown_1545
 http://ls.qingting.fm/live/4847.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1549.png",Unknown_1549
@@ -876,8 +964,12 @@ http://ls.qingting.fm/live/52710.m3u8
 http://ls.qingting.fm/live/52712.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1773.png",Unknown_1773
 http://ls.qingting.fm/live/5876899.m3u8?aac
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1602.png",Unknown_1602
+http://ls.qingting.fm/live/60260.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1716.png",Unknown_1716
 http://ls.qingting.fm/live/60358.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1494.png",Unknown_1494
+http://ls.qingting.fm/live/647.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1762.png",Unknown_1762
 http://ls.qingting.fm/live/76765.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1633.png",Unknown_1633
@@ -886,6 +978,10 @@ http://ls.qingting.fm/live/78923.m3u8
 http://ls.qingting.fm/live/84511.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1763.png",Unknown_1763
 http://ls.qingting.fm/live/86747.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1604.png",Unknown_1604
+http://ls.qingting.fm/live/88931.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1605.png",Unknown_1605
+http://ls.qingting.fm/live/88933.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1656.png",Unknown_1656
 http://lzlive.vojs.cn/caijing/92/live.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1650.png",Unknown_1650
@@ -898,12 +994,10 @@ http://lzlive.vojs.cn/pL6NkZo/92/live.m3u8
 http://lzlive.vojs.cn/rTyLc36/92/live.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1651.png",Unknown_1651
 http://lzlive.vojs.cn/rWjyus9/92/live.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2099.png",Unknown_2099
-http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel12/playlist.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2100.png",Unknown_2100
-http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel18/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_419.png",Unknown_419
 http://media.neuquen.gov.ar/rtn/television/chunklist_w1330236482.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2559.png",Unknown_2559
+http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_393.png",Unknown_393
 http://mediaworks-i.akamaihd.net/hls/live/220435/3812193411001/3news_live/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1540.png",Unknown_1540
@@ -918,6 +1012,10 @@ http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/08bfee38845049b8a2d
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b79ca7076a6443c3826617c98ae89aa3/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_304.png",Unknown_304
 http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e797002821014903ac760a889ce67c62/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1426.png",Unknown_1426
+http://ngcdn001.cnr.cn/live/zgzs/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1443.png",Unknown_1443
+http://ngcdn002.cnr.cn/live/jjzs/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_352.png",Unknown_352
 http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_457.png",Unknown_457
@@ -930,12 +1028,6 @@ http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
 http://player.tvnet.lv/stream/amlst:61659/chunklist_w1822312625_b528000_pd892000.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1706.png",Unknown_1706
 http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1851.png",Unknown_1851
-http://rtmp.one.by:1200
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2583.png",Unknown_2583
-http://rtmp.one.by:2200
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1852.png",Unknown_1852
-http://rtmp.one.by:2200/
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1462.png",Unknown_1462
 http://sk.cri.cn/905.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1458.png",Unknown_1458
@@ -954,16 +1046,22 @@ http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
 http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_436.png",Unknown_436
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_342.png",Unknown_342
-http://stream.srg-ssr.ch/m/rsc_de/mp3_128
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_341.png",Unknown_341
-http://stream.srg-ssr.ch/m/rsj/mp3_128
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_390.png",Unknown_390
 http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1885.png",Unknown_1885
 http://stream3.liveyun.hoge.cn/smtv1/sd/live.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1886.png",Unknown_1886
 http://stream3.liveyun.hoge.cn/smtv2/sd/live.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_375.png",Unknown_375
+http://streaming.astrakhan.ru/astrakhan24/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2640.png",Unknown_2640
+http://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1802.png",Unknown_1802
+http://thaipbs-live.cdn.byteark.com/live/playlist_480p/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2636.png",Unknown_2636
+http://thaipbs-live.cdn.byteark.com/live-en/playlist_1080p/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1777.png",Unknown_1777
+http://thaipbs-live.cdn.byteark.com/live-en/playlist_720p/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_355.png",Unknown_355
 http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1828.png",Unknown_1828
@@ -1172,24 +1270,18 @@ http://vodcdn.video.taobao.com/oss/taobao-ugc/fb7718e75857465eb179e83c8fc45464/1
 http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2572.png",Unknown_2572
 http://www.cbsnews.com/common/video/dai_prod.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1847.png",Unknown_1847
+http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass3
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_460.png",Unknown_460
+http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass4
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_458.png",Unknown_458
+http://www.elahmad.com/tv/m3u8/dubaitv.m3u8?id=dubaione
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_417.png",Unknown_417
 http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1843.png",Unknown_1843
 http://www.uniqueradio.jp/agplayerf/hls/Active.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2604.png",Unknown_2604
-http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/bw2000000/variant.m3u8?version=2
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2606.png",Unknown_2606
 http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/variant.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2605.png",Unknown_2605
-http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_4/bw2000000/variant.m3u8?version=2
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2590.png",Unknown_2590
-http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY/bw2000000/variant.m3u8?version=2
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2586.png",Unknown_2586
-http://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ/bw2000000/variant.m3u8?version=2
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2584.png",Unknown_2584
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/bw2000000/variant.m3u8?version=2
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2585.png",Unknown_2585
-http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT4/bw2000000/variant.m3u8?version=2
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2624.png",Unknown_2624
 https://106a0d4b0.vws.vegacdn.vn/cliptv_liverecord/vtv2hd_abr/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2625.png",Unknown_2625
@@ -1198,6 +1290,8 @@ https://106a0d4b0.vws.vegacdn.vn/cliptv_liverecord/vtv3hd1_abr/playlist.m3u8
 https://106a0d4b0.vws.vegacdn.vn/cliptv_liverecord/vtv4hd_abr/playlist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2627.png",Unknown_2627
 https://106a0d4b0.vws.vegacdn.vn/cliptv_liverecord/vtv6hd1_abr/playlist.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_561.png",Unknown_561
+https://15799848.s21v.faiusr.com/58/ABUIABA6GAAgsu_c4gUohrr0igU.mp4
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_323.png",Unknown_323
 https://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xiamen3_2/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1710.png",Unknown_1710
@@ -1318,6 +1412,8 @@ https://gctxyc.liveplay.myqcloud.com/gc/tyhjtynl_1/index.m3u8
 https://gctxyc.liveplay.myqcloud.com/gc/tyhjtynl_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_302.png",Unknown_302
 https://gctxyc.liveplay.myqcloud.com/gc/tyhjtys_1/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_3579.png",Unknown_3579
+https://gctxyc.liveplay.myqcloud.com/gc/tyhjtys_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_253.png",Unknown_253
 https://gctxyc.liveplay.myqcloud.com/gc/wygjt1_1/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_276.png",Unknown_276
@@ -1338,6 +1434,8 @@ https://gctxyc.liveplay.myqcloud.com/gc/zjjjjdl_1/index.m3u8
 https://gctxyc.liveplay.myqcloud.com/gc/zjjjjdl_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_254.png",Unknown_254
 https://js1.amtb.cn/liveedge/_definst_/livetv/playlist.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1792.png",Unknown_1792
+https://kanlivep2event-i.akamaihd.net/hls/live/747600/747600/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_514.png",Unknown_514
 https://lbbf9.com/20191105/6dCdeenO/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_513.png",Unknown_513
@@ -1364,6 +1462,8 @@ https://media.joycorp.co.kr:4443/live/live_720p/playlist.m3u8
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0098cc5c87c841b09bebbdc232aa35ad/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_449.png",Unknown_449
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/00dff109c20f431b8b7a739699af8a77/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_529.png",Unknown_529
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/018ada23b5674e6ca718b3cd615debeb/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_395.png",Unknown_395
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/01f76cdebd5640e7b6e5b05f239c8c06/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_496.png",Unknown_496
@@ -1416,6 +1516,12 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0be2fc2baf834f2d88
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0c3cfa0fc0444cb9b1094d16ce359ad0/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1121.png",Unknown_1121
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0c6b4090fece42f4bfd56b7b6a74e11a/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_539.png",Unknown_539
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0c70e2a6267a43b5afd3bf7971b98aab/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_512.png",Unknown_512
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0c8a2806397946e0a1551ddf4022fe93/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_501.png",Unknown_501
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0ee7d2b6c2024b46927447054cf99c18/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_320.png",Unknown_320
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/0f03b08bc7b042358144617000fd2931/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_999.png",Unknown_999
@@ -1428,6 +1534,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1075bd4eac7248a2b5
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/124ae5351e6145bb9d4a972bcd704a13/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_382.png",Unknown_382
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/129085d482de4098a2b9b942d6fe9ba7/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_541.png",Unknown_541
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/12b3877caa7b4f29ac39489b0bc91c67/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1044.png",Unknown_1044
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/12bd2a38810d49a693c5ec1654a6a0e4/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_409.png",Unknown_409
@@ -1458,6 +1566,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/193e0d1b4ee24d26b3
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1945ff42f51340b1ab6ee79b226c35bf/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1264.png",Unknown_1264
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1a016666a3b24cc3bfb38a26aab2edbe/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_508.png",Unknown_508
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1a6426d6c8474cb8a5241ca2827c40cc/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_323.png",Unknown_323
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1a86eb58a9e04c34a87f8c883932cfa2/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1018.png",Unknown_1018
@@ -1472,6 +1582,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1be4e0932fb4418ebb
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1c03ccf0e34b4476a80c2396ffe99a29/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1002.png",Unknown_1002
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1c27b0871b1a43a09eb3a354f5cc6350/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_535.png",Unknown_535
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1c3df6cae78142a19999aaf11543c6ee/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_453.png",Unknown_453
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1c6e3092ffd940ea910065e11334bc32/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1048.png",Unknown_1048
@@ -1500,12 +1612,16 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1ff32d21d2a544eab3
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/2009e97d08eb42ea90a714857e5a48a4/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1165.png",Unknown_1165
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/20dba9f4dffb41db97798450272df4f0/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_507.png",Unknown_507
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/211ae89613ff4f788d3a6fc4029e6345/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1265.png",Unknown_1265
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/212d6e5c4bf048c98c50fedb5f38cb48/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1227.png",Unknown_1227
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/224dba8abd374a47929aec00e6f0eb8a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_454.png",Unknown_454
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/22a3d52a5e47482eb812e20620248741/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_528.png",Unknown_528
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/230242ff2ed843948c7c4033757d7287/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_376.png",Unknown_376
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/23d304c091184090b3b6ceef8822a273/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_564.png",Unknown_564
@@ -1588,6 +1704,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3a2b0ef61beb418eb4
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3a35a4f130dd409590b68e6bd90e5cb7/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1176.png",Unknown_1176
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3aa5589f462c4e6eb55e9b0b368be6f2/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_525.png",Unknown_525
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3ab56247060c47a8bc46ff4ef1e6d162/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1159.png",Unknown_1159
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/3bd225db76e7406294c56ddef54ec8ea/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_487.png",Unknown_487
@@ -1660,10 +1778,14 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/470c2318e6ad44cba6
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/473591a6614e4a769ad912fbf58e79da/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1066.png",Unknown_1066
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4790548ce4e84fc189e2485860431b93/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_547.png",Unknown_547
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/48b16b04ae504d5a8fa3a96d561230ce/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1106.png",Unknown_1106
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/496d7f65fa0d4339915b3af7367a1482/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_403.png",Unknown_403
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4a049506f801441a9add649fc6209661/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_513.png",Unknown_513
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4a42ed626c574e68bf7c38617fa7ee24/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1092.png",Unknown_1092
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4b595ee9decb4d6086376b725952c1f9/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_483.png",Unknown_483
@@ -1676,6 +1798,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4bffea35701146e6b3
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4c64079f1618406294ee3ea5976daa92/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1266.png",Unknown_1266
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4cf4fd8fb93a44df971f6f22b0442cb1/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_510.png",Unknown_510
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4cf851d712a2403fbb27c5dfe9f81111/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1188.png",Unknown_1188
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4d5daba25f2b4e4ca7d4aff866b4e913/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_455.png",Unknown_455
@@ -1692,12 +1816,16 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4f7fa80c6686462cb3
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/4fb0ad5a89d4489c8ed8f43f066b7f47/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_400.png",Unknown_400
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5060c925088342f99fedff86563433db/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_518.png",Unknown_518
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5074157535e74086a3203ebdc591d1eb/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1162.png",Unknown_1162
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/509d8132c8d14b03a9aa6de7b39b6860/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_338.png",Unknown_338
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/50a132bdc16e47cfb6e292ace9dde5ee/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1198.png",Unknown_1198
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5109d005998b46c78016f92f2bde9172/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_521.png",Unknown_521
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5154176ec8a742cc9596f529dc1fdbd1/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_402.png",Unknown_402
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/517ae78b0da54686865387b76decf783/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1185.png",Unknown_1185
@@ -1726,6 +1854,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5805e831f0474ba09e
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/584d0536b3914dabb03a60d7426c46e6/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1027.png",Unknown_1027
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/584e0cdcb21a4d74986e5d28390e17ef/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_549.png",Unknown_549
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/58f82bd26db4484887be5b37438d7c9b/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1215.png",Unknown_1215
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/59575c7a2bec4a6a94f81c360f518176/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1208.png",Unknown_1208
@@ -1738,6 +1868,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5a370582c2f849a78a
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5a794d63f7364a6fa21343f7dd63d984/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_359.png",Unknown_359
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5b0e9527423542efbe1ab81c3701c20e/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_520.png",Unknown_520
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5c70f014090e464d8b100457f020e0ee/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1055.png",Unknown_1055
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5d1d2cc09ad74ecbaf7a909b04dc2eff/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1070.png",Unknown_1070
@@ -1752,6 +1884,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5f45db998ce24206a9
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/5fdff8c43bde4b019fc1052db39c798c/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1233.png",Unknown_1233
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/600618e043984d48b6d5a44e8c1b201a/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_550.png",Unknown_550
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/617de11ef3d94cc8bb8d77f91ab47ff6/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1029.png",Unknown_1029
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/61f652d827474671907dafe0d2187637/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1005.png",Unknown_1005
@@ -1762,6 +1896,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/644926d099f3418488
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/64a5084ac6c14fbeac9d7272121f3451/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1237.png",Unknown_1237
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/65b3bc9da9464b4997b26a3d3791b378/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_500.png",Unknown_500
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/65f81d39d8e747cdbe79520fc32afbb7/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1104.png",Unknown_1104
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/66c1e11b967d49c4a2c3512e21d7044a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_996.png",Unknown_996
@@ -1774,6 +1910,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6a35f12e8fb6420181
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6a42513e617a4d5ba4d61176c5a15d0d/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_332.png",Unknown_332
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6a7b458f35cd49a390faa0378d4ecde5/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_517.png",Unknown_517
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6a94822373c040d5aa5e1bb360d0a88a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1128.png",Unknown_1128
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6aa2a85040044f7fb4d000af9dafd9b7/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1047.png",Unknown_1047
@@ -1798,6 +1936,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6cde3ec7780446e9a8
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6e06d51e3d454ac8a62cacbac82d5fe2/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_427.png",Unknown_427
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6e8f016e98d14991b075f4232dbbe2a2/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_538.png",Unknown_538
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6f7125d109484f95a3dcee1d715bdd42/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1194.png",Unknown_1194
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/6fc961176ebe4a698484639a553aad88/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1145.png",Unknown_1145
@@ -1808,6 +1948,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/70344cd85dc34abf84
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/715b69bd822446ee8910964b42289ecf/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1115.png",Unknown_1115
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/71bf8601e7eb46f4a000314aaf37eeed/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_540.png",Unknown_540
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/71c1281bf5ef4f3f9c6ba8d55895e8b2/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1111.png",Unknown_1111
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/7279660d2bcf4e7cb10bc48c06429d46/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1037.png",Unknown_1037
@@ -1816,6 +1958,10 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/737493dbc8e64023ae
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/73847c91bed14dc6883c438861b84b5f/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_445.png",Unknown_445
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/73a90ed2920b47589463bac9802bdf43/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_526.png",Unknown_526
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/752a4f8385b04fb6bdb103164f033db4/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_543.png",Unknown_543
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/75e8c6b6c9474f348b479ca796123328/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1256.png",Unknown_1256
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/763dc6802b664f07b781b03ca1ed8571/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1257.png",Unknown_1257
@@ -1938,6 +2084,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/8e3b7ebeaf774863b1
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/8e769619ca1c4d3a82abdaf257a62399/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1007.png",Unknown_1007
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/900a6d895d884a00b9d90baee0d28060/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_505.png",Unknown_505
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/9021cf58e50b4082a5c7aa576b3fa16f/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_980.png",Unknown_980
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/904892bff8ab4de894eb46685fc6fe87/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1065.png",Unknown_1065
@@ -1962,6 +2110,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/9433024f26874cb4b2
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/94b0326592024a759522450fea376aab/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1097.png",Unknown_1097
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/94d7ee66e6964f8c983aff81ce8ae406/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_499.png",Unknown_499
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/95f892f4039f4ee8b8eae1ba953ab221/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1069.png",Unknown_1069
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/963ade9aede54d2da53f48f2f3c4cf37/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_559.png",Unknown_559
@@ -2006,6 +2156,12 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a0510c0c4e254d269c
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a072fb46e9474a26babeb0644d5e8dc3/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1270.png",Unknown_1270
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a0efda3572b240c19109dfd3f1f737f2/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_519.png",Unknown_519
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a0f4a63b5dd743c9ae2f870ad7b9e2dd/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_532.png",Unknown_532
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a10bf5024121486d8a077c12a93cde01/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_534.png",Unknown_534
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a12d2d42b5644370b2564919496d517a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_331.png",Unknown_331
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a14f86e6e1434908a12fd00a2c8b0b73/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1243.png",Unknown_1243
@@ -2032,12 +2188,20 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a72044f6fd404a9e83
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a782842e5a094048a3a62edd92ff37dc/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1184.png",Unknown_1184
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a78ae97e8c9d4805aed0327180641818/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_531.png",Unknown_531
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a8016b0f94d54d0c83f006f1fa1582e1/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1084.png",Unknown_1084
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a80afe9037214643a05476a18dd2916f/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_533.png",Unknown_533
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a823dd5fd0294c6d8b4b4ac1538fdf59/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1262.png",Unknown_1262
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a833e8d317d4431f8c8faf0d64de10da/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_516.png",Unknown_516
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a8751e81ca514ac78f617d5c7220191e/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1202.png",Unknown_1202
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a8e7fb17e374468aaddebb92fbef7673/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_530.png",Unknown_530
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/a9eed935fe7b4f0f81f90066b6e87563/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_467.png",Unknown_467
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/aab9cb537d464c6987710db633e28c6a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1082.png",Unknown_1082
@@ -2046,6 +2210,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/aad9a3a99b0d497989
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/aadbf26193344582bf76b2b5f8b22a22/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_404.png",Unknown_404
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/aba5a0b8a7e44fda974b06f89a7f4fc5/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_544.png",Unknown_544
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/abf336741df145e1a01be1e82ec68293/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_486.png",Unknown_486
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ac8838256cbd4636bce7190fe977f046/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1085.png",Unknown_1085
@@ -2102,6 +2268,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b754307ff31e463fb1
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b759cd1e63d8451b83abd147309ee3db/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1003.png",Unknown_1003
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b765d2bf8944411a99112c5aaeef374e/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_511.png",Unknown_511
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b76da0f7842e4f63b8b39e34be85d3dd/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1151.png",Unknown_1151
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b79bce75766743b5b16bdf46cecb6b83/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1154.png",Unknown_1154
@@ -2112,6 +2280,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b83ba09ba1d64cc7b4
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b88184bbd2314803af3f55edd8520760/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_494.png",Unknown_494
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b8c94517b17f4e769318e3aefbd2de78/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_536.png",Unknown_536
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b90b87d6e4104c23868e343bceda1977/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1143.png",Unknown_1143
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b911e2dede1a4f5981c3bdb393213702/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_380.png",Unknown_380
@@ -2120,6 +2290,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b931570cc1d14c2eab
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b970cfe7f4f14beb85d8752c88c10c6c/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1206.png",Unknown_1206
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b993adc90a2f44938e798a5ea2e031bc/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_537.png",Unknown_537
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/b9b25a6846bc452c8486ee50ff9166d5/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_575.png",Unknown_575
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/baa81ee5f6584bf3bea95aa91bc082c9/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1081.png",Unknown_1081
@@ -2154,6 +2326,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c5a4f221752d4c3585
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c5a9178fc3dc45a0b21fe068c11e4e44/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_345.png",Unknown_345
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c5c9a732d2dd4179828895fb75a3ca08/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_546.png",Unknown_546
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c7004c20a5014c4f8d9a6e28b504231f/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1123.png",Unknown_1123
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c7d98b6e78cf4d6f90b09bbc3412b261/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_399.png",Unknown_399
@@ -2214,6 +2388,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d5a178970a064a1a9b
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d5bd0b00cd7c49ee90b80218de5f8923/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1230.png",Unknown_1230
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d5dc18fd13d44320b29f275d60f1bee7/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_502.png",Unknown_502
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d7397021ec7d4a1a974285ddbafff400/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_397.png",Unknown_397
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/d89a2c0629fe4909b4d421b9f3f388ab/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_317.png",Unknown_317
@@ -2270,6 +2446,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e4d38d61d9b24154af
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e4d760c594c04a1e8d8d023f535175d6/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_986.png",Unknown_986
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e55f52ff4cae44cda78051bf28b040fd/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_523.png",Unknown_523
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e57ccc74e25643509d4e49df1cd02e00/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1210.png",Unknown_1210
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e608b9ad077847ba89dad7e77065cb36/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1152.png",Unknown_1152
@@ -2278,6 +2456,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e658f7fb22144878a2
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e820b499aa964d95a4cb151cbd63ee70/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_328.png",Unknown_328
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e86d503179254fc0ba5ebb6f44103d9d/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_548.png",Unknown_548
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e88ebcb5fb9f441cb140c300f00fbfa0/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_579.png",Unknown_579
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/e96c7b1769de47a290316cd8bb94b41b/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_367.png",Unknown_367
@@ -2300,6 +2480,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/eda1c82647e54c2196
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/edcd57aba0974db1af57241dd51a8efd/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1008.png",Unknown_1008
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/edece10a914641c18ea9e5bd43da3b21/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_506.png",Unknown_506
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ee1611cbc2584331a85f2a9afe1dde0a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1170.png",Unknown_1170
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ee4e2d36a84c438aa9290327781f9c8d/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_457.png",Unknown_457
@@ -2308,6 +2490,10 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ee4efe1473a049809a
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ee50f5dd8a51454cb1e30b97b27681c8/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_358.png",Unknown_358
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ef0bb93b6d9a44f6b68f7abc15770a9e/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_545.png",Unknown_545
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ef34c76839c54953902442e6655e2aad/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_522.png",Unknown_522
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/efadc7c80573485e91a685e092b82d36/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1064.png",Unknown_1064
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/efbd040e94c144bb8a74e2d63845c5b4/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_451.png",Unknown_451
@@ -2318,6 +2504,10 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f0dc2767c77d4fa9b4
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f173715b6c7b44b891aa18f92c01095e/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_370.png",Unknown_370
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f185a4cb6fec4e5fac0b7c3bda661cfa/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_542.png",Unknown_542
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f202fe0b1c20436188c5301990133795/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_524.png",Unknown_524
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f26ac7d9f77140b38c178db893855f8a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1171.png",Unknown_1171
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f2b86a03bb684c3db425af2df3d50e31/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1087.png",Unknown_1087
@@ -2328,8 +2518,14 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f414050993f34cc595
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f5148f0035d44d77b74aa58aa6d57c18/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_412.png",Unknown_412
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f5534105be4a4573bbadb383aff1c1bd/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_509.png",Unknown_509
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f561e66e0ce14dbf9c6245cf6107ed3a/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1032.png",Unknown_1032
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f5bd7b5ce86e42db8e9f5bd510f6f7c6/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_514.png",Unknown_514
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f62f7113ae80448d9a63b36ddf50da6d/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_515.png",Unknown_515
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f6754fef90bd4fef928a059d5de85168/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_489.png",Unknown_489
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/f7200e292cb84aeebfe012c0b2018082/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_994.png",Unknown_994
@@ -2368,8 +2564,14 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/fe1791727b3747ad95
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ff3c402020f145e58d37d00aceafc0bd/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1105.png",Unknown_1105
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ff72a540dc0f4c5898edecb5e88c0263/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_503.png",Unknown_503
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ff8466b7e913492a8248ee04509972f0/1200.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_577.png",Unknown_577
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ffd496b21249464fa9ea4cf84ae168ec/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_527.png",Unknown_527
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/ffedbf675e8e4c28916921a935b39e55/1200.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_724.png",Unknown_724
+https://newcntv.qcloudcdn.com/asp/hls/850/0303000a/3/default/b941693131214d6e8ecf1dafb0d24d78/850.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_314.png",Unknown_314
 https://newcntv.qcloudcdn.com/asp/hls/850/0303000a/3/default/c2e7e767f3144bed959ef20b8b961fe5/850.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_33.png",Unknown_33
@@ -2378,8 +2580,6 @@ https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_1831.png",Unknown_1831
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_301.png",Unknown_301
-https://stream.chinasuntv.com/680k/mid_video_index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_2528.png",Unknown_2528
 https://stream3.shopch.jp/httporiginlivech1/ch1.stream_1280p/chunklist.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_224.png",Unknown_224
@@ -2436,6 +2636,12 @@ https://vdse.bdstatic.com/c331feb0b4730b05d03793ffc024e62a.mp4?authorization=bce
 https://vdse.bdstatic.com/d4463cd83c0c47fba7ce65c71ad94bbb.mp4?authorization=bce-auth-v1%2Ffb297a5cc0fb434c971b8fa103e8dd7b%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F09b9a33c3ded7584f68a3b875a10ba6a021d74f32e4144c2c0327f05c57abfdc
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Unknown_3594.png",Unknown_3594
 https://vdse.bdstatic.com/fb039eeea8864d07e543cf91abb1dbad.mp4
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰衛視中文台.png",鳳凰衛視中文台
+http://bxtv.3a.ink/api.php?id=fhzw
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰衛視資訊台.png",鳳凰衛視資訊台
+http://bxtv.3a.ink/api.php?id=fhzx
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰衛視香港台.png",鳳凰衛視香港台
+http://bxtv.3a.ink/api.php?id=fhhk
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://r.jdshipin.com/cCCzW
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
@@ -2460,8 +2666,8 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/NOW NEWS.png",NOW NEWS
 http://cdn.163189.xyz/163189/now
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/特種兵之火鳳凰.png",特種兵之火鳳凰
-http://cdn.jdshipin.com:8880/huya.php?id=29982636
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
+http://pull-vivek.speedws.com/live/aaafhzx.flv
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
 http://61.221.215.25:8800/hls/47/index.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
@@ -2478,6 +2684,8 @@ http://dms.yryyj.site:8188/udp/239.76.246.135:1234$LR•IPV4『线路11』
 http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8$LR•IPV4『线路26』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 https://cdn.163189.xyz/live/fhzw/stream.m3u8$LR•IPV4『线路28』
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
+http://8.138.7.223/tv/gdmzyd.php?id=4$LR•IPV4『线路30』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://cdn.163189.xyz/live/fhzw/stream.m3u8$LR•IPV4『线路41』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
@@ -2496,36 +2704,36 @@ http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=5282&tk=2aca1ad9a849$LR•IPV4『线�
 http://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8$LR•IPV4『线路12』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
 https://aktv.top/AKTV/live/aktv/null-5/AKTV.m3u8$LR•IPV4『线路19』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
-http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=3523&tk=7877e7cc41c7$LR•IPV4『线路29』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰衛視.png",鳳凰衛視
 http://119.32.12.17:2901/udp/224.1.100.3:11111$LR•IPV4『线路2』
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰衛視.png",鳳凰衛視
 http://cdn.132.us.kg/live/fhzw/stream.m3u8$LR•IPV4『线路4』
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Anthony Bourdain: Parts Unknown.png",Anthony Bourdain: Parts Unknown
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65eed44c2873090008bdb4ab/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=c01994e4-e1a1-4951-a355-2a30aa511907&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=0009fdbf-5ef7-43e5-a820-ac33e813e310
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Anthony Bourdain: Parts Unknown.png",Anthony Bourdain: Parts Unknown
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/69173ce8abd4703b27f71d44/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=32de4823-7501-4845-ba26-8699462954dd&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=6a87ec41-8acc-4af4-8a10-7f18e353c136
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/660d6ade0cd4630008f4a127/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=78b29450-7022-4485-b983-23f30e23925f&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3eca9ff8-84f8-400f-8847-b4573c6767ac
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/660d6b7f7bcd8600087d08c0/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=7089727d-21c4-4175-9100-a14521359b66&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=8db8abae-2957-4a89-a374-807f34eb1584
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/660d6b00635c75000828aa27/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ed502ec4-ffd0-49d1-b7de-1c00fad2906c&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=65a4a92b-d24c-4fae-bb51-9759605746ca
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/660d6b3caec9680008f8debe/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=ef438a77-24b9-40a1-9b9b-e24ca3052bea&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=df8a8706-9c65-4f4c-ae6c-7ce252efc112
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/La fiebre del Jade.png",La fiebre del Jade
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65254e8d81f9420008342cee/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=13a07cf5-9cd9-48a5-8101-764fc4a1e908&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=6dcf407b-ca83-469f-995c-b25e91be6237
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/MS NOW (720p).png",MS NOW (720p)
 http://41.205.93.154/MSNBC/index.m3u8
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/NOW 70's.png",NOW 70's
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/64c37e710e086a0009e824ab/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=7edcd3e3-9c10-4a9a-befc-acec5f7a4572
-#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Now 80's.png",Now 80's
-https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6490254fd2c47c00083a5743/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=07998d5d-dd4a-4bcc-84be-58dcbcec76b7&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=54a0187b-e66d-4deb-ad65-517caa9410b5
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/NOW TV (720p).png",NOW TV (720p)
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/Romedy Now (576p).png",Romedy Now (576p)
 http://161.248.38.40:8000/play/a07r/index.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]RTHK31 *sg.png",[BD]RTHK31 *sg
+https://stream1.freetv.fun/a81da3fd66f335a20dea0f69a288eb2265d3ecba5d529e154b1429f9841c81d1.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]RTHK32 *sg.png",[BD]RTHK32 *sg
+https://stream1.freetv.fun/8c15a3ad248d22f171970a3b22dc7fe2d902bcad59980fbe45fab592f1b0e995.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]鳳凰中文 *sg.png",[BD]鳳凰中文 *sg
+https://stream1.freetv.fun/3892090ddf2c069555068609c569dd1d5c39c7a4b2d3d614fdec6a1337b715be.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]鳳凰中文.png",[BD]鳳凰中文
+https://stream1.freetv.fun/c8ad10f8d135ebbea6b77779874c1d8a6da07d925786ac11f855c0dfa87b4487.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[VGA]鳳凰中文[geo-blocked].png",[VGA]鳳凰中文[geo-blocked]
+https://stream1.freetv.fun/a4e7e8c192fe538f4878412af5f611bf10948212e980cf029ac0500a7cb8962f.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[HD]鳳凰資訊.png",[HD]鳳凰資訊
+https://stream1.freetv.fun/320c213f4bb29b607f6c659b2a94918fc7f922c996ede3738fdff2ab9bd90217.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[VGA]鳳凰資訊.png",[VGA]鳳凰資訊
+https://stream1.freetv.fun/7d3e0683dbf6e0636efa3bc17815aba2c44580449b0be83ed1e3ca97ed45bccc.ctv
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[SD]鳳凰電影.png",[SD]鳳凰電影
+https://stream1.freetv.fun/eb5c379a2d045382ce7f8ffa78e5b7d184a3c44fffe574d72e3fab54a7d696f7.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]鳳凰香港 *sg.png",[BD]鳳凰香港 *sg
+https://stream1.freetv.fun/9b8c3d71546b4dd10e2ff194bdb79941d8455270835e35027622d509742ff377.m3u8
+#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/[BD]鳳凰香港[geo-blocked].png",[BD]鳳凰香港[geo-blocked]
+https://stream1.freetv.fun/1d0cd71c154df6f70ed3dbf11b59922a12c9ad1ec4f8f1913fdcc17065a24041.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8
 #EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/鳳凰中文台.png",鳳凰中文台
