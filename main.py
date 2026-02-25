@@ -2,14 +2,12 @@ import requests
 import re
 import datetime
 from opencc import OpenCC
-from concurrent.futures import ThreadPoolExecutor # 加入多線程支援
+from concurrent.futures import ThreadPoolExecutor
 
 # 初始化繁簡轉換器
 cc = OpenCC('s2t')
 
-# --- 設定區 ---
-
-# 1. 來源列表
+# --- 設定區 (保持不變) ---
 SOURCE_URLS = [
     "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u",
     "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82023.m3u",
@@ -41,12 +39,12 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
     "https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", # 高清
-    "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
-    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    "https://iptv-org.github.io/iptv/countries/hk.m3u",
+    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u",
-    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",     # 常用更新
-    "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",           #收錄 4K 及高清源
+    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
+    "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
     "https://iptv-org.github.io/iptv/countries/tw.m3u",
@@ -55,7 +53,6 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv2.m3u"
 ]
 
-# 新增：手動單個源清單
 MANUAL_SINGLE_CHANNELS = [
     {"name": "翡翠台", "url": "https://HaNoiIPTV.short.gy/Que_huong_HaNoiIPTV-TVB_Fei_Cui_Tai"},
     {"name": "翡翠台", "url": "http://php.jdshipin.com/TVOD/iptv.php?id=fct2"},
@@ -72,90 +69,30 @@ MANUAL_SINGLE_CHANNELS = [
     {"name": "大灣區衛視", "url": "http://gmxw.7766.org:808/hls/132/index.m3u8"}
 ]
 
-# 2. 包含關鍵字 (必須包含這些字才抓取)
-KEYWORDS = [
-    "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
-    "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", 
-    "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", "凤凰","成人",
-    # --- 新增台灣、澳門關鍵字 ---
-    "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", 
-    # --- 新增澳門 ---
-    "澳視", "澳門", "TDM", "澳亞"
-]
-
-# 3. 黑名單關鍵字 (包含這些字的一律丟棄)
-BLOCK_KEYWORDS = [
-    # 來自你的日誌分析 (美國/英語台)
-    "FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", 
-    "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now",
-    "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies",
-    "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric",
-    "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock",
-    "Winnipeg","Edmonton","RightNow","Times","True","Mindanow",
-    
-    # 來自你的日誌分析 (大陸/澳門台)
-    "浙江", "杭州", "西湖", "深圳",  # 排除 "杭州西湖明珠"
-    "韶關", "CCTV", "CGTN",  "華麗", "星河", "延时", "測試", "iHOY", "福建"
-]
-
-# 4. 【已更新】頻道排序優先級 (越上面越靠前)
-ORDER_KEYWORDS = [
-    # --- 第一組：廣東/廣州 ---
-    "廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方",
-    
-    # --- 第二組：香港 ---
-    "港台電視", "翡翠", "無線新聞", "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", 
-    
-    # --- 第三組：台灣 ---
-    "民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來",
-        
-    # --- 第四組：澳門 ---
-    "澳視", "澳門", "TDM", "澳亞",
-
-]
-
-# 5. 必備的官方/穩定源
-STATIC_CHANNELS = [
-    {"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"},
-    {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}
-]
+KEYWORDS = ["ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", "凤凰","成人", "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", "澳視", "澳門", "TDM", "澳亞"]
+BLOCK_KEYWORDS = ["FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now", "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies", "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric", "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock", "Winnipeg","Edmonton","RightNow","Times","True","Mindanow", "浙江", "杭州", "西湖", "深圳", "韶關", "CCTV", "CGTN", "華麗", "星河", "延时", "測試", "iHOY", "福建"]
+ORDER_KEYWORDS = ["廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方", "港台電視", "翡翠", "無線新聞", "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", "民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來", "澳視", "澳門", "TDM", "澳亞"]
+STATIC_CHANNELS = [{"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"}, {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}]
 
 # --- 邏輯區 ---
 
-cc = OpenCC('s2t')
-
 def check_url(item):
     url = item['url']
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Referer': url # 自動將 Referer 設為網址本身，破解部分防盜鏈
-    }
-    
+    headers = {'User-Agent': 'Mozilla/5.0...', 'Referer': url}
     try:
-        # 嘗試 1: 用 HEAD 請求 (最快)
         response = requests.head(url, timeout=2, headers=headers, allow_redirects=True)
-        if response.status_code == 200:
-            return item
-            
-        # 嘗試 2: 如果 HEAD 唔得，用 GET 請求並只讀取頭部 (stream=True)
-        # 呢招對付 jdshipin 呢類阻擋 HEAD 嘅源好有效
+        if response.status_code == 200: return item
         response = requests.get(url, timeout=3, headers=headers, stream=True)
         if response.status_code == 200:
-            response.close() # 確定通咗就即刻斷開，唔好嘥流量
+            response.close()
             return item
-    except:
-        pass
+    except: pass
     return None
 
 def fetch_and_parse():
     found_channels = []
-    seen_urls = set()  # ### 修改點 1: 新增呢行，用 Set 嚟秒速檢查重複
-    # 模擬真實瀏覽器 Headers，增加 Referer 破解防火牆
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Referer': 'https://live.hacks.tools/'
-    }
-    
+    seen_urls = set()
+    headers = {'User-Agent': 'Mozilla/5.0...', 'Referer': 'https://live.hacks.tools/'}
     print("🚀 任務開始！正在抓取網路源...", flush=True)
     
     for index, source in enumerate(SOURCE_URLS):
@@ -164,156 +101,113 @@ def fetch_and_parse():
         try:
             r = requests.get(source, timeout=15, headers=headers)
             r.encoding = 'utf-8'
-            
-            if r.status_code != 200:
-                print(f"    ⚠️ 抓取失敗 (Status: {r.status_code})", flush=True)
-                continue
+            if r.status_code != 200: continue
             
             lines = r.text.split('\n')
-            current_name = ""
-            count_added = 0
-            
+            current_name, count_added = "", 0
             for line in lines:
                 line = line.strip()
                 if not line: continue
-                
                 if line.startswith("#EXTINF"):
-                    # 採用「最後一個逗號」分割法，最準確抓取頻道名
                     if ',' in line:
                         raw_name = line.split(',')[-1].strip()
-                        # 轉繁體 + 修正「台」字
                         current_name = cc.convert(raw_name).replace('臺', '台')
-                
                 elif line.startswith("http") and current_name:
-                    # 1. 排除 IPv6 (GitHub Actions 通常唔支援，費事 Check 黎都死)
-                    if "[" in line and "]" in line:
+                    if "[" in line and "]" in line: 
                         current_name = ""
                         continue
-
-                    # 2. 黑名單檢查
                     if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
                         current_name = ""
                         continue
                     
-                    # 3. 白名單檢查 (關鍵字匹配 + 台灣特權)
-                    # 先檢查關鍵字有無中
                     is_match = any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS)
-                    
-                    # 如果「關鍵字中咗」或者「佢係來自台灣源」，就加入名單
                     if is_match or is_taiwan_source:
                         if line not in seen_urls:
                             found_channels.append({"name": current_name, "url": line})
-                            seen_urls.add(line)  # 記低呢條 URL
+                            seen_urls.add(line)
+                            count_added += 1
+                        else:
+                            # 呢度就可以見到邊啲係重複
+                            pass 
                     current_name = ""
-
             print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
-            
         except Exception as e:
             print(f"    ❌ 抓取錯誤: {e}", flush=True)
-
     return found_channels
 
 def generate_m3u(channels):
-    total = len(channels)
-    print(f"\n🔍 共找到 {total} 個潛在頻道，開始檢測有效性...", flush=True)
+    print(f"\n🔍 共找到 {len(channels)} 個潛在頻道，開始檢測有效性...", flush=True)
+    final_list = list(STATIC_CHANNELS)
     
-    final_list = []
-    
-    # 1. 加入靜態源
-    for static in STATIC_CHANNELS:
-        final_list.append(static)
-        
-# 2. 檢測網路源 (啟動多線程並行檢測)
     print(f"⚡ 啟動多線程檢測 (20 線程同步進行)...", flush=True)
-    
     with ThreadPoolExecutor(max_workers=20) as executor:
-        # 呢行 map 係核心：佢會同時派 20 個線程去執行 check_url
-        # 注意：我哋傳入成個頻道 dict (ch)，而唔單止係 url
         results = list(executor.map(check_url, channels))
     
-    # 篩選出有效結果 (check_url 回傳唔係 None 嘅)
     valid_channels = [r for r in results if r is not None]
-    final_list.extend(valid_channels)
     
-    print(f"✅ 檢測完成！共收錄 {len(valid_channels)} 個有效網路頻道。", flush=True)
+    # --- 修正後的死鏈顯示邏輯 ---
+    valid_urls = {r['url'] for r in valid_channels}
+    invalid_channels = [c for c in channels if c['url'] not in valid_urls]
+    
+    if invalid_channels:
+        print(f"\n🚫 檢測到 {len(invalid_channels)} 個失效連結：")
+        for ch in invalid_channels:
+            print(f"  [X] 死鏈: {ch['name']} - {ch['url']}")
 
-    # 3. 排序
-    print("\n🔄 正在進行排序...", flush=True)
+    final_list.extend(valid_channels)
+    print(f"\n✅ 檢測完成！共收錄 {len(valid_channels)} 個有效網路頻道。", flush=True)
+
+    print("🔄 正在進行排序...", flush=True)
     final_list.sort(key=get_sort_key)
 
-# 4. 寫入文件 (手動分組寫入法)
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
     
-    # 定義分組順序
-    groups_to_write = ["廣東/廣州", "香港", "台灣", "澳門", "其他"]
-    
-    for current_group in groups_to_write:
+    groups = ["廣東/廣州", "香港", "台灣", "澳門", "其他"]
+    for current_group in groups:
         for item in final_list:
-            final_name = item["name"].replace('臺', '台')
-            
-            # 判斷呢個 item 屬於邊組 (呢部分用返你原本嘅 logic)
-            if any(x in final_name for x in ["澳門", "澳視", "澳亞", "TDM"]):
-                item_group = "澳門"
-            elif any(x in final_name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
-                item_group = "台灣"
-            elif any(x in final_name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
-                item_group = "廣東/廣州"
-            elif any(x in final_name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
-                item_group = "香港"
-            else:
-                item_group = "其他"
+            name = item["name"].replace('臺', '台')
+            # 分組邏輯
+            if any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): ig = "澳門"
+            elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): ig = "台灣"
+            elif any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): ig = "廣東/廣州"
+            elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): ig = "香港"
+            else: ig = "其他"
 
-            # 只有當 item 屬於當前寫入嘅分組時，先至寫入
-            if item_group == current_group:
-                content += f'#EXTINF:-1 group-title="{item_group}" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
-                content += f'{item["url"]}\n'
+            if ig == current_group:
+                content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name}\n{item["url"]}\n'
 
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
         f.write(content)
+    print(f"\n🎉 全部完成！共生成 {len(final_list)} 個頻道。", flush=True)
 
-    print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
-    
 def get_sort_key(item):
     name = item["name"]
-    # 呢度要同你下面 generate_m3u 嘅 group 判斷一致
-    if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
-        group_priority = 100
-    elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
-        group_priority = 200
-    elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
-        group_priority = 300
-    elif any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]):
-        group_priority = 400
-    else:
-        group_priority = 500  # 其他台排最後
-
-    # 喺分組權重基礎上，再加埋關鍵字排序
-    keyword_priority = 99
-    for index, keyword in enumerate(ORDER_KEYWORDS):
-        if keyword.lower() in name.lower():
-            keyword_priority = index
+    if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): gp = 100
+    elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): gp = 200
+    elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): gp = 300
+    elif any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): gp = 400
+    else: gp = 500
+    
+    kp = 99
+    for i, k in enumerate(ORDER_KEYWORDS):
+        if k.lower() in name.lower():
+            kp = i
             break
-            
-    return group_priority + keyword_priority
+    return gp + kp
 
 if __name__ == "__main__":
-    # 1. 抓取網絡上的所有訂閱源
     candidates = fetch_and_parse()
-
-    # 建立一個現有 URL 的清單，用嚟對比手動源
     existing_urls = {c['url'] for c in candidates}
     
-    # 2. 【注入手動單源】
-    print(f"\n📦 正在注入 {len(MANUAL_SINGLE_CHANNELS)} 個手動單源...", flush=True)
+    print(f"\n📦 正在注入手動源...", flush=True)
     for item in MANUAL_SINGLE_CHANNELS:
-        # 同樣做繁簡轉換，確保排序同 Logo 正常
         item['name'] = cc.convert(item['name']).replace('臺', '台')
-        
-        # ### 縮進修正：確保下面呢三行喺 for 迴圈入面 ###
         if item['url'] not in existing_urls:
+            print(f"  [+] 注入成功: {item['name']}")
             candidates.append(item)
             existing_urls.add(item['url'])
+        else:
+            print(f"  [!] 手動源已存在，跳過: {item['name']} ({item['url']})")
         
-    # 3. 開始統一校驗 (包含埋手動加嗰幾條)
     generate_m3u(candidates)
