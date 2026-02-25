@@ -41,8 +41,6 @@ SOURCE_URLS = [
     "https://epg.pw/test_channels_hong_kong.m3u",
     "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
     "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u",
-    "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u",
-    "https://live.hacks.tools/iptv/languages/singapore.m3u",
     "https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
     "https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u",
