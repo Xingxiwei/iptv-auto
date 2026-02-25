@@ -126,23 +126,22 @@ def check_url(item):
 
 def fetch_and_parse():
     found_channels = []
-    # 模拟真实浏览器的 Headers
+    # 模擬真實瀏覽器 Headers，增加 Referer 破解防火牆
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Referer': 'https://live.hacks.tools/'
     }
     
-    print("🚀 任务开始！正在抓取网络源...", flush=True)
+    print("🚀 任務開始！正在抓取網路源...", flush=True)
     
     for index, source in enumerate(SOURCE_URLS):
-        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在读取: {source}", flush=True)
+        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
         try:
-            # 关键：这里必须带上 headers
             r = requests.get(source, timeout=15, headers=headers)
             r.encoding = 'utf-8'
             
             if r.status_code != 200:
-                print(f"    ⚠️ 抓取失败 (Status: {r.status_code}) - 可能是被屏蔽了", flush=True)
+                print(f"    ⚠️ 抓取失敗 (Status: {r.status_code})", flush=True)
                 continue
             
             lines = r.text.split('\n')
@@ -154,26 +153,33 @@ def fetch_and_parse():
                 if not line: continue
                 
                 if line.startswith("#EXTINF"):
-                    # 改进正则：兼容更多复杂的标签格式
-                    # 找最后一个逗号后面的内容作为频道名
+                    # 採用「最後一個逗號」分割法，最準確抓取頻道名
                     if ',' in line:
                         raw_name = line.split(',')[-1].strip()
-                        converted_name = cc.convert(raw_name)
-                        current_name = converted_name.replace('臺', '台')
+                        # 轉繁體 + 修正「台」字
+                        current_name = cc.convert(raw_name).replace('臺', '台')
                 
                 elif line.startswith("http") and current_name:
-                    # 黑白名单检查逻辑（保持你原来的不变）
+                    # 1. 排除 IPv6 (GitHub Actions 通常唔支援，費事 Check 黎都死)
+                    if "[" in line and "]" in line:
+                        current_name = ""
+                        continue
+
+                    # 2. 黑名單檢查
                     if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
                         current_name = ""
                         continue
                     
-                    if any(k.lower() in current_name.lower() for k in KEYWORDS):
+                    # 3. 白名單檢查 (關鍵字匹配)
+                    # --- 修正後的白名單檢查段落 ---
+                    # 將關鍵字也轉為繁體對比，確保簡體關鍵字也能匹配到繁體頻道名
+                    if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
                         if not any(c['url'] == line for c in found_channels):
                             found_channels.append({"name": current_name, "url": line})
                             count_added += 1
                     current_name = "" 
 
-            print(f"    ✅ 抓取成功，新增 {count_added} 个频道", flush=True)
+            print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
             
         except Exception as e:
             print(f"    ❌ 抓取錯誤: {e}", flush=True)
