@@ -216,6 +216,15 @@ def generate_m3u(channels):
 
     print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
 
+def get_sort_key(item):
+    """根據 ORDER_KEYWORDS 決定頻道排序權重"""
+    name = item["name"]
+    for index, keyword in enumerate(ORDER_KEYWORDS):
+        # 使用 .lower() 確保大小寫唔會影響匹配
+        if keyword.lower() in name.lower():
+            return index
+    return 999  # 冇匹配到關鍵字嘅排最後
+
 if __name__ == "__main__":
     candidates = fetch_and_parse()
     generate_m3u(candidates)
