@@ -94,19 +94,24 @@ BLOCK_KEYWORDS = [
     "Winnipeg","Edmonton","RightNow","Times","True","Mindanow",
     
     # 來自你的日誌分析 (大陸/澳門台)
-    "浙江", "杭州", "西湖",  # 排除 "杭州西湖明珠"
+    "浙江", "杭州", "西湖", "深圳",  # 排除 "杭州西湖明珠"
     "韶關", "CCTV", "CGTN",  "華麗", "星河", "延时", "測試", "iHOY", "福建"
 ]
 
 # 4. 【已更新】頻道排序優先級 (越上面越靠前)
 ORDER_KEYWORDS = [
-    "廣東", "珠江", "广州", "廣州", "大灣區",
-    "翡翠", "無線新聞", "明珠", "J2", "J5", "財經",  # TVB系列
-    "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",  # Viu系列 (包含你加入的大小寫變體)
-    "HOY", "奇妙", "有線",                         # HOY/Cable系列
-    "港台電視31", "RTHK 31",                      # RTHK系列
-    "港台電視32", "RTHK 32",
-    "Now新聞", "Now直播",                          # Now系列
+    # --- 第一組：廣東/廣州 ---
+    "廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方",
+    
+    # --- 第二組：香港 ---
+    "港台電視", "翡翠", "無線新聞", "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", 
+    
+    # --- 第三組：台灣 ---
+    "民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來",
+        
+    # --- 第四組：澳門 ---
+    "澳視", "澳門", "TDM", "澳亞",
+
 ]
 
 # 5. 必備的官方/穩定源
@@ -154,6 +159,7 @@ def fetch_and_parse():
     
     for index, source in enumerate(SOURCE_URLS):
         print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
+        is_taiwan_source = "tw.m3u" in source.lower()
         try:
             r = requests.get(source, timeout=15, headers=headers)
             r.encoding = 'utf-8'
@@ -188,14 +194,16 @@ def fetch_and_parse():
                         current_name = ""
                         continue
                     
-                    # 3. 白名單檢查 (關鍵字匹配)
-                    # --- 修正後的白名單檢查段落 ---
-                    # 將關鍵字也轉為繁體對比，確保簡體關鍵字也能匹配到繁體頻道名
-                    if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
+                    # 3. 白名單檢查 (關鍵字匹配 + 台灣特權)
+                    # 先檢查關鍵字有無中
+                    is_match = any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS)
+                    
+                    # 如果「關鍵字中咗」或者「佢係來自台灣源」，就加入名單
+                    if is_match or is_taiwan_source:
                         if not any(c['url'] == line for c in found_channels):
                             found_channels.append({"name": current_name, "url": line})
                             count_added += 1
-                    current_name = "" 
+                    current_name = ""
 
             print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
             
@@ -232,13 +240,27 @@ def generate_m3u(channels):
     print("\n🔄 正在進行排序...", flush=True)
     final_list.sort(key=get_sort_key)
 
-    # 4. 寫入文件
+# 4. 寫入文件
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
     
     for item in final_list:
         final_name = item["name"].replace('臺', '台')
-        content += f'#EXTINF:-1 group-title="IPTV" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
+        
+# --- 精準分組邏輯 ---
+        if any(x in final_name for x in ["澳門", "澳視", "澳亞", "TDM"]):
+            group = "澳門"
+        elif any(x in final_name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
+            group = "台灣"
+        elif any(x in final_name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
+            group = "廣東/廣州"
+        elif any(x in final_name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
+            group = "香港"
+        else:
+            group = "其他"  # 如果都唔中，就放喺其他
+            
+        # 寫入分組後的資訊
+        content += f'#EXTINF:-1 group-title="{group}" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
         content += f'{item["url"]}\n'
 
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
