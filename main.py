@@ -44,6 +44,7 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", # 高清
     "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
+    "https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",     # 常用更新
     "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",           #收錄 4K 及高清源
     "https://raw.githubusercontent.com/TureIptv/Live/main/live.m3u",              #整合咗好多大馬同香港源
