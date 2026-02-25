@@ -64,7 +64,12 @@ MANUAL_SINGLE_CHANNELS = [
     {"name": "翡翠台", "url": "http://mytv.cdn.loc.cc/o12.php?id=fct"},
     {"name": "翡翠台", "url": "http://r.jdshipin.com/thuYX"},
     {"name": "翡翠台", "url": "https://o11.163189.xyz/stream/tvb/fct4k/"},
-    {"name": "翡翠台", "url": "http://r.jdshipin.com/qrfbg"}
+    {"name": "翡翠台", "url": "http://r.jdshipin.com/qrfbg"},
+    {"name": "大灣區衛視", "url": "http://www.8888866.xyz:10000/udp/239.77.0.215:5146"},
+    {"name": "大灣區衛視", "url": "http://183.11.239.36:808/hls/132/index.m3u8"},
+    {"name": "大灣區衛視", "url": "http://yahao.myqnapcloud.com:4022/udp/239.77.0.215:5146"},
+    {"name": "大灣區衛視", "url": "http://222.128.55.152:9080/live/dwq.m3u8"},
+    {"name": "大灣區衛視", "url": "http://gmxw.7766.org:808/hls/132/index.m3u8"}
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
