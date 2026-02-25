@@ -50,7 +50,10 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", # 高清
     "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
-    "https://raw.githubusercontent.com/Guovern/tv-list/main/m3u/live.m3u"     # 常用更新
+    "https://raw.githubusercontent.com/Guovern/tv-list/main/m3u/live.m3u",     # 常用更新
+    "https://iptv-org.github.io/iptv/countries/hk.m3u",
+    "https://iptv-org.github.io/iptv/countries/tw.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
 ]
 
 # 2. 包含關鍵字 (必須包含這些字才抓取)
@@ -123,19 +126,23 @@ def check_url(item):
 
 def fetch_and_parse():
     found_channels = []
+    # 模拟真实浏览器的 Headers
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Referer': 'https://live.hacks.tools/'
+    }
     
-    print("🚀 任務開始！正在抓取網路源...", flush=True)
+    print("🚀 任务开始！正在抓取网络源...", flush=True)
     
     for index, source in enumerate(SOURCE_URLS):
-        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
+        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在读取: {source}", flush=True)
         try:
-        # 加入 headers 費事抓取源頭都 block 你
-            fetch_headers = {'User-Agent': 'Mozilla/5.0'}
-            r = requests.get(source, timeout=10, headers=fetch_headers)
+            # 关键：这里必须带上 headers
+            r = requests.get(source, timeout=15, headers=headers)
             r.encoding = 'utf-8'
             
             if r.status_code != 200:
-                print(f"    ⚠️ 無法讀取 (Status: {r.status_code})", flush=True)
+                print(f"    ⚠️ 抓取失败 (Status: {r.status_code}) - 可能是被屏蔽了", flush=True)
                 continue
             
             lines = r.text.split('\n')
@@ -147,29 +154,26 @@ def fetch_and_parse():
                 if not line: continue
                 
                 if line.startswith("#EXTINF"):
-                    match = re.search(r',(.+)$', line)
-                    if match:
-                        raw_name = match.group(1).strip()
-                        # 轉繁體
+                    # 改进正则：兼容更多复杂的标签格式
+                    # 找最后一个逗号后面的内容作为频道名
+                    if ',' in line:
+                        raw_name = line.split(',')[-1].strip()
                         converted_name = cc.convert(raw_name)
-                        # 修正「臺」為「台」
                         current_name = converted_name.replace('臺', '台')
-                        
+                
                 elif line.startswith("http") and current_name:
-                    # 1. 黑名單檢查
+                    # 黑白名单检查逻辑（保持你原来的不变）
                     if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
                         current_name = ""
                         continue
-
-                    # 2. 白名單檢查
-                    if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
-                        # 去重
+                    
+                    if any(k.lower() in current_name.lower() for k in KEYWORDS):
                         if not any(c['url'] == line for c in found_channels):
                             found_channels.append({"name": current_name, "url": line})
                             count_added += 1
-                    current_name = "" # 重置
-            
-            print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
+                    current_name = "" 
+
+            print(f"    ✅ 抓取成功，新增 {count_added} 个频道", flush=True)
             
         except Exception as e:
             print(f"    ❌ 抓取錯誤: {e}", flush=True)
