@@ -26,13 +26,10 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
     "https://raw.githubusercontent.com/vicjl/myIPTV/refs/heads/main/CNTV.m3u",
     "https://raw.githubusercontent.com/vicjl/myIPTV/refs/heads/main/IPTV-all.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
-    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
     "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
     "https://iptv-org.github.io/iptv/index.m3u",
-    "https://iptv-org.github.io/iptv/countries/hk.m3u",
     "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
     "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u",
@@ -48,11 +45,11 @@ SOURCE_URLS = [
     "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",     # 常用更新
+    "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",           #收錄 4K 及高清源
+    "https://raw.githubusercontent.com/TureIptv/Live/main/live.m3u",              #整合咗好多大馬同香港源
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
-    "https://iptv-org.github.io/iptv/countries/hk.m3u",
     "https://iptv-org.github.io/iptv/countries/tw.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
 ]
 
 # 新增：手動單個源清單
@@ -78,7 +75,9 @@ KEYWORDS = [
     "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", 
     "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", "凤凰","成人",
     # --- 新增台灣、澳門關鍵字 ---
-    "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", "澳門"
+    "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", 
+    # --- 新增澳門 ---
+    "澳視", "澳門", "TDM", "澳亞"
 ]
 
 # 3. 黑名單關鍵字 (包含這些字的一律丟棄)
