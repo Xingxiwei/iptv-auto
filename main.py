@@ -47,14 +47,12 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",     # 常用更新
     "https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u",           #收錄 4K 及高清源
-    "https://raw.githubusercontent.com/TureIptv/Live/main/live.m3u",              #整合咗好多大馬同香港源
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
     "https://iptv-org.github.io/iptv/countries/tw.m3u",
     "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/ku9.m3u",
     "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv.m3u",
-    "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv2.m3u",
-    "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/iptv.m3u"
+    "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv2.m3u"
 ]
 
 # 新增：手動單個源清單
