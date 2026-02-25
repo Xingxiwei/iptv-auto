@@ -133,7 +133,7 @@ def check_url(item):
     
     try:
         # 嘗試 1: 用 HEAD 請求 (最快)
-        response = requests.head(url, timeout=3, headers=headers, allow_redirects=True)
+        response = requests.head(url, timeout=2, headers=headers, allow_redirects=True)
         if response.status_code == 200:
             return item
             
@@ -240,28 +240,33 @@ def generate_m3u(channels):
     print("\n🔄 正在進行排序...", flush=True)
     final_list.sort(key=get_sort_key)
 
-# 4. 寫入文件
+# 4. 寫入文件 (手動分組寫入法)
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
     
-    for item in final_list:
-        final_name = item["name"].replace('臺', '台')
-        
-# --- 精準分組邏輯 ---
-        if any(x in final_name for x in ["澳門", "澳視", "澳亞", "TDM"]):
-            group = "澳門"
-        elif any(x in final_name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
-            group = "台灣"
-        elif any(x in final_name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
-            group = "廣東/廣州"
-        elif any(x in final_name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
-            group = "香港"
-        else:
-            group = "其他"  # 如果都唔中，就放喺其他
+    # 定義分組順序
+    groups_to_write = ["廣東/廣州", "香港", "台灣", "澳門", "其他"]
+    
+    for current_group in groups_to_write:
+        for item in final_list:
+            final_name = item["name"].replace('臺', '台')
             
-        # 寫入分組後的資訊
-        content += f'#EXTINF:-1 group-title="{group}" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
-        content += f'{item["url"]}\n'
+            # 判斷呢個 item 屬於邊組 (呢部分用返你原本嘅 logic)
+            if any(x in final_name for x in ["澳門", "澳視", "澳亞", "TDM"]):
+                item_group = "澳門"
+            elif any(x in final_name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
+                item_group = "台灣"
+            elif any(x in final_name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
+                item_group = "廣東/廣州"
+            elif any(x in final_name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
+                item_group = "香港"
+            else:
+                item_group = "其他"
+
+            # 只有當 item 屬於當前寫入嘅分組時，先至寫入
+            if item_group == current_group:
+                content += f'#EXTINF:-1 group-title="{item_group}" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
+                content += f'{item["url"]}\n'
 
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
         f.write(content)
@@ -269,13 +274,27 @@ def generate_m3u(channels):
     print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
     
 def get_sort_key(item):
-    """根據 ORDER_KEYWORDS 決定頻道排序權重"""
     name = item["name"]
+    # 呢度要同你下面 generate_m3u 嘅 group 判斷一致
+    if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]):
+        group_priority = 100
+    elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]):
+        group_priority = 200
+    elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]):
+        group_priority = 300
+    elif any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]):
+        group_priority = 400
+    else:
+        group_priority = 500  # 其他台排最後
+
+    # 喺分組權重基礎上，再加埋關鍵字排序
+    keyword_priority = 99
     for index, keyword in enumerate(ORDER_KEYWORDS):
-        # 使用 .lower() 確保大小寫唔會影響匹配
         if keyword.lower() in name.lower():
-            return index
-    return 999  # 冇匹配到關鍵字嘅排最後
+            keyword_priority = index
+            break
+            
+    return group_priority + keyword_priority
 
 if __name__ == "__main__":
     # 1. 抓取網絡上的所有訂閱源
