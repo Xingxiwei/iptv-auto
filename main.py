@@ -50,7 +50,9 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", # 高清
     "https://iptv-org.github.io/iptv/countries/hk.m3u",                       # 國際收錄
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",           # 綜合
-    "https://raw.githubusercontent.com/Guovern/tv-list/main/m3u/live.m3u",     # 常用更新
+    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",     # 常用更新
+    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
+    "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
     "https://iptv-org.github.io/iptv/countries/hk.m3u",
     "https://iptv-org.github.io/iptv/countries/tw.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
