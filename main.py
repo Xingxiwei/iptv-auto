@@ -98,16 +98,23 @@ STATIC_CHANNELS = [
 cc = OpenCC('s2t')
 
 def check_url(item):
-    """檢測鏈接是否有效 (用 HEAD 請求會快好多)"""
+    """檢測鏈接是否有效 (加入 Headers 避免封鎖)"""
     url = item['url']
+    
+    # 1. 新增：身分證 (Headers)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    
     try:
-        # 優先用 HEAD 請求，唔得先用 GET
-        response = requests.head(url, timeout=3, allow_redirects=True)
+        # 2. 修改：加入 headers=headers
+        response = requests.head(url, timeout=3, headers=headers, allow_redirects=True)
         if response.status_code == 200:
             return item
     except:
         try:
-            response = requests.get(url, timeout=3, stream=True)
+            # 3. 修改：加入 headers=headers
+            response = requests.get(url, timeout=3, headers=headers, stream=True)
             if response.status_code == 200:
                 return item
         except:
@@ -177,15 +184,19 @@ def generate_m3u(channels):
     for static in STATIC_CHANNELS:
         final_list.append(static)
         
-    # 2. 檢測網路源
-    for i, ch in enumerate(channels):
-        print(f"[{i+1}/{total}] 檢測: {ch['name']} ...", end=" ", flush=True)
-        
-        if check_url(ch['url']):
-            final_list.append(ch)
-            print("🟢 有效", flush=True)
-        else:
-            print("🔴 失效", flush=True)
+# 2. 檢測網路源 (啟動多線程並行檢測)
+    print(f"⚡ 啟動多線程檢測 (20 線程同步進行)...", flush=True)
+    
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        # 呢行 map 係核心：佢會同時派 20 個線程去執行 check_url
+        # 注意：我哋傳入成個頻道 dict (ch)，而唔單止係 url
+        results = list(executor.map(check_url, channels))
+    
+    # 篩選出有效結果 (check_url 回傳唔係 None 嘅)
+    valid_channels = [r for r in results if r is not None]
+    final_list.extend(valid_channels)
+    
+    print(f"✅ 檢測完成！共收錄 {len(valid_channels)} 個有效網路頻道。", flush=True)
 
     # 3. 排序
     print("\n🔄 正在進行排序...", flush=True)
