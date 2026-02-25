@@ -129,7 +129,9 @@ def fetch_and_parse():
     for index, source in enumerate(SOURCE_URLS):
         print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
         try:
-            r = requests.get(source, timeout=15)
+        # 加入 headers 費事抓取源頭都 block 你
+            fetch_headers = {'User-Agent': 'Mozilla/5.0'}
+            r = requests.get(source, timeout=10, headers=fetch_headers)
             r.encoding = 'utf-8'
             
             if r.status_code != 200:
