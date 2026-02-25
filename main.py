@@ -149,6 +149,7 @@ def check_url(item):
 
 def fetch_and_parse():
     found_channels = []
+    seen_urls = set()  # ### 修改點 1: 新增呢行，用 Set 嚟秒速檢查重複
     # 模擬真實瀏覽器 Headers，增加 Referer 破解防火牆
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -200,9 +201,9 @@ def fetch_and_parse():
                     
                     # 如果「關鍵字中咗」或者「佢係來自台灣源」，就加入名單
                     if is_match or is_taiwan_source:
-                        if not any(c['url'] == line for c in found_channels):
+                        if line not in seen_urls:
                             found_channels.append({"name": current_name, "url": line})
-                            count_added += 1
+                            seen_urls.add(line)  # 記低呢條 URL
                     current_name = ""
 
             print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
@@ -299,13 +300,20 @@ def get_sort_key(item):
 if __name__ == "__main__":
     # 1. 抓取網絡上的所有訂閱源
     candidates = fetch_and_parse()
+
+    # 建立一個現有 URL 的清單，用嚟對比手動源
+    existing_urls = {c['url'] for c in candidates}
     
-    # 2. 【新增】將手動單條連結注入進去
+    # 2. 【注入手動單源】
     print(f"\n📦 正在注入 {len(MANUAL_SINGLE_CHANNELS)} 個手動單源...", flush=True)
     for item in MANUAL_SINGLE_CHANNELS:
         # 同樣做繁簡轉換，確保排序同 Logo 正常
         item['name'] = cc.convert(item['name']).replace('臺', '台')
-        candidates.append(item)
         
-    # 3. 開始統一校驗 (呢度會包含埋你手動加嗰幾條)
+        # ### 縮進修正：確保下面呢三行喺 for 迴圈入面 ###
+        if item['url'] not in existing_urls:
+            candidates.append(item)
+            existing_urls.add(item['url'])
+        
+    # 3. 開始統一校驗 (包含埋手動加嗰幾條)
     generate_m3u(candidates)
