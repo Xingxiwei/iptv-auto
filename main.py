@@ -163,7 +163,9 @@ def fetch_and_parse():
                     current_name = ""
             
             # --- 對「待測名單」進行多線程並發測速 (提高速度) ---
+# --- 處理檢測與報告 ---
             if current_candidates:
+                # (呢部分係處理有命中關鍵字嘅邏輯，保持不變)
                 total_found = len(current_candidates)
                 print(f"    📥 命中關鍵字 {total_found} 條，啟動 20 線程測速...", end="", flush=True)
                 with ThreadPoolExecutor(max_workers=20) as executor:
@@ -173,16 +175,21 @@ def fetch_and_parse():
                 count_valid = len(valid_ones)
                 all_valid_channels.extend(valid_ones)
                 
-                # 判斷狀態：如果一條都唔通，就標記為失效
                 health = f"✅ 有效 (活鏈 {count_valid})" if count_valid > 0 else "⚠️ 連結失效 (搵到關鍵字但全死)"
                 report_data.append(f"來源: {source}\n狀態: {health} | 命中數: {total_found}\n{'-'*50}")
                 print(f"\r    ✅ 完成：{count_valid} 條可用...")
             else:
-                # 【優化點】當唔夾關鍵字時，話俾你知呢個源到底係賣乜藥
-                sample_names = ", ".join(list(set(all_found_names))[:10]) # 取 10 個名做樣本
-                health = "⚪ 略過 (冇你要嘅關鍵字)"
-                report_data.append(f"來源: {source}\n狀態: {health}\n頻道樣本: {sample_names} ...\n{'-'*50}")
-                print(f"    ⚪ 略過 (樣本: {sample_names})")
+                # 【重點更新】當冇符合關鍵字時，列出該源「所有」頻道名，不再省略
+                # 1. 使用 set() 去除重複名稱
+                # 2. 使用 sorted() 按名稱排序，方便你閱讀
+                all_names_str = ", ".join(sorted(list(set(all_found_names))))
+                
+                health = "⚪ 略過 (此源冇你設定嘅關鍵字頻道)"
+                # 將所有頻道名完整寫入報告
+                report_data.append(f"來源: {source}\n狀態: {health}\n所有頻道清單: {all_names_str}\n{'-'*50}")
+                
+                # 終端機 (Console) 依然顯示簡短版本，費事洗晒你個 Screen
+                print(f"    ⚪ 略過 (已將 {len(set(all_found_names))} 個頻道名寫入報告)")
 
         except Exception as e:
             report_data.append(f"來源: {source}\n狀態: ❌ 報錯 ({str(e)})\n{'-'*50}")
