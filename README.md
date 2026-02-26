@@ -1,4 +1,4 @@
-# 📺 HK IPTV Auto Updater | 香港電視台直播源自動更新
+# 📺 IPTV Auto Updater | 電視台直播源自動更新
 
 ![Update Status](https://github.com/xiweiwong/hk-iptv-auto/actions/workflows/main.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
