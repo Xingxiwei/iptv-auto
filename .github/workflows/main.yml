@@ -36,13 +36,17 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
-        git add hk_live.m3u source_report.txt
+        # 1. 先將暫存區清空 (Reset)，但唔會刪除你爬出嚟嘅檔案內容
+        # 咁樣可以令個環境變返「乾淨」，符合 Pull 的要求
+        git reset
 
-        # 2. 依家先至做 Pull Rebase，確保同雲端同步，Git 就識處理喇
+        # 2. 趁依家無暫存衝突，即刻 Pull 雲端最新嘅紀錄
         git pull origin main --rebase
 
-        # 3. 提交變動 (如果檔案有改過先至 Commit)
+        # 3. 依家先至重新 Add 你啱啱生成嘅新檔案
+        git add hk_live.m3u source_report.txt
+
+        # 4. 最後檢查有無變動並提交
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
