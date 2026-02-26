@@ -73,7 +73,7 @@ Fork 之後，`README.md` 顯示的訂閱鏈接仍然指向原作者 (`xiweiwong
 請務必編輯 `README.md`，將訂閱鏈接中的 `xiweiwong` 替換為你的 GitHub 用戶名，否則你的用戶將無法獲取你更新的列表。
 
 ### 5. 查看來源健康度分析報告
-打开“source_report.txt”即可看到
+打开“source_report.txt”即可看到，如想把省略频道加回的可以在白名單 (KEYWORDS)中添加关键字
 
 *   **CDN 格式範例**:
     `https://raw.gh.registry.cyou/<你的用戶名>/<倉庫名稱>/refs/heads/main/hk_live.m3u`
