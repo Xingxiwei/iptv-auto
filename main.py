@@ -195,7 +195,12 @@ def fetch_and_parse():
     return all_valid_channels
 
 def generate_m3u(valid_channels):
-    """【功能】生成最終 M3U"""
+    """
+    【功能】將抓取到嘅有效頻道，按照「分組優先級」同「測速結果」寫入 M3U 檔案
+    1. 整合靜態官方源同動態抓取源。
+    2. 根據 get_sort_key 進行全局排序。
+    3. 遍歷指定分組順序（廣東 -> 香港 -> 台灣 -> 澳門），確保播放器顯示時唔會亂。
+    """
     final_list = list(STATIC_CHANNELS)
     final_list.extend(valid_channels)
 
@@ -225,7 +230,11 @@ def generate_m3u(valid_channels):
     print(f"\n🎉 大功告成！檔案已儲存為 hk_live.m3u", flush=True)
 
 def get_sort_key(item):
-    """【核心改動】排序邏輯：分組優先 -> 關鍵字優先 -> 測速最快優先"""
+    """
+    【功能】核心排序權重計算機：決定邊個台排喺最上面
+    權重公式 = 大分組權重(gp) + 頻道關鍵字順序(kp) + 測速微調(speed/1,000,000)
+    數值越細，排名越前。
+    """
     name = item["name"]
     speed = item.get('speed', 9999)
 
