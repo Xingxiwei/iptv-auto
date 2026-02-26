@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-02-25 13:17:32
+# Update: 2026-02-26 02:28:48
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東衛視.png",廣東衛視
 http://112.27.235.94:8000/hls/30/index.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
@@ -25,8 +25,6 @@ http://23.237.228.134/live6/guangdong.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
 https://stream1.freetv.fun/yan-dong-zhu-jiang-16.ctv
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
-http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
-#EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
 https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c736681.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
 http://php.jdshipin.com/PLTV/iptv.php?id=gdty
@@ -48,12 +46,12 @@ https://stream1.freetv.fun/yan-dong-min-sheng-21.ctv
 http://php.jdshipin.com/TVOD/iptv.php?id=gdty
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東少兒.png",廣東少兒
 http://gmxw.7766.org:808/hls/175/index.m3u8
-#EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
-http://cdn2.132.us.kg/live/gdty/stream.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東民生.png",廣東民生
 http://183.11.239.36:808/hls/18/index.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東珠江.png",廣東珠江
 http://cdn2.132.us.kg/live/gdzj/stream.m3u8
+#EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣東體育.png",廣東體育
+http://cdn2.132.us.kg/live/gdty/stream.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/珠江衛視.png",珠江衛視
 http://iptv.4666888.xyz/iptv2A.php?id=19
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/廣州綜合.png",廣州綜合
@@ -107,7 +105,11 @@ https://iptv.catvod.com/live.php?id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 https://iptv.catvod.com/live.php?id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&line=2
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
+https://www.freetv.top/migu/608917627.m3u8?migutoken=bad0a45eea94649f2e7f1b35e1d98d034b874a02984a76abb21e4537dee28f974e6da241dc7705109722be71c8b1302302b51cd4cb06c69ca55fdcf7279d415e0a0fce7c492b6842956ab34fcc
+#EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 https://stream1.freetv.fun/9e44565ab6186689007a295d8b94b2a970fafde637068b0e3837e5f84689a8f3.m3u8
+#EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
+https://www.freetv.top/migu/608917627.m3u8?migutoken=6e23ed23803d2776218fbd5b6931d4dd0d0a20d0269ca0da6b2efaaf101f71c62689ec1d6f73e16a10d1b756f7e23f0de494b881e2bc39c12250715721f84c185577680003f363869dba1b7e90
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
 http://183.11.239.36:808/hls/132/index.m3u8
 #EXTINF:-1 group-title="廣東/廣州" logo="https://epg.112114.xyz/logo/大灣區衛視.png",大灣區衛視
@@ -212,14 +214,16 @@ http://cdn6.163189.xyz/163189/mzt
 http://r.jdshipin.com/Nr5jq
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/有線財經信息台.png",有線財經信息台
 https://epg.pw/stream/0fddc0600d3868b05ad741d46294410aebca0fdc4fada5028dc54e624b7b17ca.m3u8
-#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
-http://r.jdshipin.com/vSJvl
-#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
-http://r.jdshipin.com/TcKr2
-#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
-http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
-#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]Viutv *sg.png",[BD]Viutv *sg
-https://stream1.freetv.fun/45181db55db70a3fc349faf2ef2b901599a9cbc7106f2674134cac2db74b2f81.m3u8
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/566447a554a11bb540e5e37ea32162caa2959fefd3707625f70de6ac96255364.ctv
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/acf28668e5790e2d2ac642051e52d00b0ea2372b79f0526617aa30a9af34b16b.ctv
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/6e51cfdfdd9988358bd19ac505badd794b005798348da2715479b55057f921a5.ctv
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
+https://stream1.freetv.fun/855fcf2cb6242c3bbf91d073a966eefcecb239f58f03460b4947d32ee7785d2c.m3u8
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]viutvsix.png",[BD]viutvsix
+https://stream1.freetv.fun/732f193d67c8884d4ea74fab208403ff6495f2298e32f33ffbb019c1171ac507.ctv
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/HOY TV.png",HOY TV
 http://r.jdshipin.com/sFw4S
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/HOY78.png",HOY78
@@ -228,6 +232,8 @@ http://cdn.163189.xyz/live/hoy/stream.m3u8
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/[BD]HOY 77 *sg.png",[BD]HOY 77 *sg
 https://stream1.freetv.fun/7dc8bf470430004791ec5e7712e3eb2087cc07d7e8443a6b1843a59946a0fdcf.m3u8
+#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/HOY TV (720p).png",HOY TV (720p)
+http://media.fantv.hk/m3u8/archive/channel2.m3u8
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/HOY77.png",HOY77
 http://cdn6.163189.xyz/163189/hoy
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/香港有線新聞.png",香港有線新聞
@@ -254,8 +260,6 @@ https://epg.pw/stream/27b49ba568efc8dcc9af6a79ec06ffd4a2e354e3e2060143be83fca695
 https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/RTHK 32.png",RTHK 32
 https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
-#EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/鳳凰衛視香港台.png",鳳凰衛視香港台
-http://bxtv.3a.ink/api.php?id=fhhk
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/鳳凰香港台.png",鳳凰香港台
 http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
 #EXTINF:-1 group-title="香港" logo="https://epg.112114.xyz/logo/RTHK31.png",RTHK31
@@ -482,20 +486,18 @@ http://cdn6.163189.xyz/163189/amzy
 http://cdn6.163189.xyz/163189/amlh
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/NOW財經台.png",NOW財經台
 http://67.220.67.246:2347/livehttpplay?channel_id=13000
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
+http://r.jdshipin.com/TcKr2
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
 http://php.jdshipin.com/TVOD/iptv.php?id=viutv
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
 http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
-https://stream1.freetv.fun/566447a554a11bb540e5e37ea32162caa2959fefd3707625f70de6ac96255364.ctv
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
-https://stream1.freetv.fun/acf28668e5790e2d2ac642051e52d00b0ea2372b79f0526617aa30a9af34b16b.ctv
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
-https://stream1.freetv.fun/6e51cfdfdd9988358bd19ac505badd794b005798348da2715479b55057f921a5.ctv
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]viutv.png",[BD]viutv
-https://stream1.freetv.fun/855fcf2cb6242c3bbf91d073a966eefcecb239f58f03460b4947d32ee7785d2c.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]viutvsix.png",[BD]viutvsix
-https://stream1.freetv.fun/732f193d67c8884d4ea74fab208403ff6495f2298e32f33ffbb019c1171ac507.ctv
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
+http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]Viutv *sg.png",[BD]Viutv *sg
+https://stream1.freetv.fun/45181db55db70a3fc349faf2ef2b901599a9cbc7106f2674134cac2db74b2f81.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
 https://cdn.163189.xyz/163189/viu
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/VIUTV 6.png",VIUTV 6
@@ -588,6 +590,8 @@ http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xiamen1_2/index.m3u8
 http://cctvtxyh5ca.liveplay.myqcloud.com/cstv/xiamen3_2/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_510.png",Unknown_510
 http://cdn.adultiptv.net/compilation.m3u8?streamType=live
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_902.png",Unknown_902
+http://cdn12.mudu.tv/uploads/106151/640_480/9f30b41065d660242797a95abaf5bff7.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1692.png",Unknown_1692
 http://cdn-live1.qvc.jp/iPhone/800/800.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_385.png",Unknown_385
@@ -688,14 +692,20 @@ http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
 http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2007.png",Unknown_2007
 http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2008.png",Unknown_2008
+http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1707.png",Unknown_1707
 http://lb.streaming.sk/fashiontv/stream/chunklist_w1702070444.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1806.png",Unknown_1806
 http://lb.streaming.sk/fashiontv/stream/chunklist_w1906011378.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1530.png",Unknown_1530
+http://live.dxhmt.cn:9081/tv/10323-1.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2597.png",Unknown_2597
 http://live.m2.tv/hls3/stream.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1991.png",Unknown_1991
 http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1993.png",Unknown_1993
+http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1992.png",Unknown_1992
 http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1375.png",Unknown_1375
@@ -812,18 +822,28 @@ http://live-350k.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch2-
 http://liveproduseast.akamaized.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_421.png",Unknown_421
 http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1662.png",Unknown_1662
-http://ls.qingting.fm/live/1101.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1581.png",Unknown_1581
+http://ls.qingting.fm/live/1115.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1590.png",Unknown_1590
 http://ls.qingting.fm/live/1140.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1712.png",Unknown_1712
 http://ls.qingting.fm/live/1158.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1587.png",Unknown_1587
 http://ls.qingting.fm/live/1185.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1757.png",Unknown_1757
+http://ls.qingting.fm/live/1211.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1756.png",Unknown_1756
 http://ls.qingting.fm/live/1220.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1761.png",Unknown_1761
+http://ls.qingting.fm/live/1221.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1760.png",Unknown_1760
+http://ls.qingting.fm/live/1223.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1531.png",Unknown_1531
+http://ls.qingting.fm/live/1254.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1533.png",Unknown_1533
 http://ls.qingting.fm/live/1259.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1536.png",Unknown_1536
+http://ls.qingting.fm/live/1260.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1542.png",Unknown_1542
 http://ls.qingting.fm/live/1262.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1608.png",Unknown_1608
@@ -834,6 +854,8 @@ http://ls.qingting.fm/live/1271.m3u8
 http://ls.qingting.fm/live/1272.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1706.png",Unknown_1706
 http://ls.qingting.fm/live/1273.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1723.png",Unknown_1723
+http://ls.qingting.fm/live/1274.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1722.png",Unknown_1722
 http://ls.qingting.fm/live/1275.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1791.png",Unknown_1791
@@ -854,10 +876,10 @@ http://ls.qingting.fm/live/1499.m3u8
 http://ls.qingting.fm/live/1500.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1496.png",Unknown_1496
 http://ls.qingting.fm/live/1502.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1702.png",Unknown_1702
+http://ls.qingting.fm/live/1511803.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1774.png",Unknown_1774
 http://ls.qingting.fm/live/1601.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1775.png",Unknown_1775
-http://ls.qingting.fm/live/1602.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1739.png",Unknown_1739
 http://ls.qingting.fm/live/1610.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1737.png",Unknown_1737
@@ -876,8 +898,6 @@ http://ls.qingting.fm/live/1646.m3u8
 http://ls.qingting.fm/live/1649.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1665.png",Unknown_1665
 http://ls.qingting.fm/live/1650.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1668.png",Unknown_1668
-http://ls.qingting.fm/live/1651.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1603.png",Unknown_1603
 http://ls.qingting.fm/live/1665.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1682.png",Unknown_1682
@@ -886,6 +906,8 @@ http://ls.qingting.fm/live/1668.m3u8
 http://ls.qingting.fm/live/1670.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1683.png",Unknown_1683
 http://ls.qingting.fm/live/1671.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1680.png",Unknown_1680
+http://ls.qingting.fm/live/1672.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1783.png",Unknown_1783
 http://ls.qingting.fm/live/1673.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1781.png",Unknown_1781
@@ -898,16 +920,20 @@ http://ls.qingting.fm/live/1731.m3u8
 http://ls.qingting.fm/live/1733.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1515.png",Unknown_1515
 http://ls.qingting.fm/live/1736.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1519.png",Unknown_1519
+http://ls.qingting.fm/live/1737.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1517.png",Unknown_1517
 http://ls.qingting.fm/live/1739.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1612.png",Unknown_1612
 http://ls.qingting.fm/live/1753.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1611.png",Unknown_1611
 http://ls.qingting.fm/live/1754.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1614.png",Unknown_1614
+http://ls.qingting.fm/live/1756.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1610.png",Unknown_1610
+http://ls.qingting.fm/live/1757.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1609.png",Unknown_1609
 http://ls.qingting.fm/live/1758.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1588.png",Unknown_1588
-http://ls.qingting.fm/live/1840.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1589.png",Unknown_1589
 http://ls.qingting.fm/live/1842.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1700.png",Unknown_1700
@@ -940,12 +966,18 @@ http://ls.qingting.fm/live/1936.m3u8
 http://ls.qingting.fm/live/1937.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1619.png",Unknown_1619
 http://ls.qingting.fm/live/2212959.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1572.png",Unknown_1572
+http://ls.qingting.fm/live/2216385.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1574.png",Unknown_1574
+http://ls.qingting.fm/live/2218715.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1753.png",Unknown_1753
 http://ls.qingting.fm/live/23797.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1752.png",Unknown_1752
 http://ls.qingting.fm/live/23801.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1704.png",Unknown_1704
 http://ls.qingting.fm/live/23859.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1709.png",Unknown_1709
+http://ls.qingting.fm/live/23861.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1708.png",Unknown_1708
 http://ls.qingting.fm/live/23863.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1710.png",Unknown_1710
@@ -1034,6 +1066,8 @@ http://ls.qingting.fm/live/4524.m3u8
 http://ls.qingting.fm/live/4585.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1772.png",Unknown_1772
 http://ls.qingting.fm/live/4592896.m3u8?aac
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1719.png",Unknown_1719
+http://ls.qingting.fm/live/4594.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1720.png",Unknown_1720
 http://ls.qingting.fm/live/4595.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1721.png",Unknown_1721
@@ -1046,6 +1080,8 @@ http://ls.qingting.fm/live/470.m3u8
 http://ls.qingting.fm/live/471.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1545.png",Unknown_1545
 http://ls.qingting.fm/live/4847.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1549.png",Unknown_1549
+http://ls.qingting.fm/live/4848.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1718.png",Unknown_1718
 http://ls.qingting.fm/live/4865.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1689.png",Unknown_1689
@@ -1076,14 +1112,20 @@ http://ls.qingting.fm/live/4944.m3u8
 http://ls.qingting.fm/live/4955.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1782.png",Unknown_1782
 http://ls.qingting.fm/live/4956.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1802.png",Unknown_1802
+http://ls.qingting.fm/live/4969.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1795.png",Unknown_1795
 http://ls.qingting.fm/live/4973.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1798.png",Unknown_1798
 http://ls.qingting.fm/live/4974.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1800.png",Unknown_1800
 http://ls.qingting.fm/live/4976.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1376.png",Unknown_1376
+http://ls.qingting.fm/live/4998.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1789.png",Unknown_1789
 http://ls.qingting.fm/live/5008.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1787.png",Unknown_1787
+http://ls.qingting.fm/live/5009.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1766.png",Unknown_1766
 http://ls.qingting.fm/live/5014.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1617.png",Unknown_1617
@@ -1100,8 +1142,6 @@ http://ls.qingting.fm/live/5057.m3u8
 http://ls.qingting.fm/live/5079921.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1729.png",Unknown_1729
 http://ls.qingting.fm/live/5079970.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1502.png",Unknown_1502
-http://ls.qingting.fm/live/5116983.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1551.png",Unknown_1551
 http://ls.qingting.fm/live/52710.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1554.png",Unknown_1554
@@ -1114,6 +1154,8 @@ http://ls.qingting.fm/live/60258.m3u8
 http://ls.qingting.fm/live/60260.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1716.png",Unknown_1716
 http://ls.qingting.fm/live/60358.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1494.png",Unknown_1494
+http://ls.qingting.fm/live/647.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1762.png",Unknown_1762
 http://ls.qingting.fm/live/76765.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1633.png",Unknown_1633
@@ -1190,8 +1232,6 @@ http://sk.cri.cn/am846.m3u8
 http://sk.cri.cn/hyhq.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1460.png",Unknown_1460
 http://sk.cri.cn/nhzs.m3u8
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_495.png",Unknown_495
-http://spacetv.in/stream/WUQP6BVK17/56.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1836.png",Unknown_1836
 http://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1769.png",Unknown_1769
@@ -1228,8 +1268,6 @@ http://tv.balkanweb.com/news24/livestream/playlist.m3u8
 http://tv.balkanweb.com:8081/news24/livestream/chunks.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2089.png",Unknown_2089
 http://tvdrs.wsrtv.com.cn:8100/channellive/ch1.flv
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_272.png",Unknown_272
-http://tx.hls.huya.com/huyalive/94525224-2703099090-11609722189397360640-4587890396-10057-A-0-1.m3u8?wsSecret=dc5cb6850b7824862759f841ec02a287&wsTime=5f352e72&fm=RFdxOEJjSjNoNkRKdDZUWV8kMF8kMV8kMl8kMw%3D%3D&ctype=tars_mobile&txyp=o%3Acp1%3B&fs=bgct&t=103
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_209.png",Unknown_209
 http://vd3.bdstatic.com/mda-ihai9qt3yny3sx53/hd/mda-ihai9qt3yny3sx53.mp4?pd=19&vt=1
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1323.png",Unknown_1323
@@ -1444,8 +1482,12 @@ http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/bw2000000/variant.m3u8?version=
 http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_2/variant.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2605.png",Unknown_2605
 http://zabava-htlive.cdn.ngenix.net/hls/CH_2X2_4/bw2000000/variant.m3u8?version=2
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2590.png",Unknown_2590
+http://zabava-htlive.cdn.ngenix.net/hls/CH_DISNEY/bw2000000/variant.m3u8?version=2
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2586.png",Unknown_2586
 http://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ/bw2000000/variant.m3u8?version=2
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2584.png",Unknown_2584
+http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/bw2000000/variant.m3u8?version=2
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2585.png",Unknown_2585
 http://zabava-htlive.cdn.ngenix.net/hls/CH_TNT4/bw2000000/variant.m3u8?version=2
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_2624.png",Unknown_2624
@@ -1538,12 +1580,18 @@ https://gcalic.v.myalicdn.com/gc/yxhcnh_1/index.m3u8?contentid=2820180516001
 https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3552.png",Unknown_3552
 https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_311.png",Unknown_311
+https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3584.png",Unknown_3584
 https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_293.png",Unknown_293
+https://gctxyc.liveplay.myqcloud.com/gc/emsarm_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3571.png",Unknown_3571
 https://gctxyc.liveplay.myqcloud.com/gc/emsarm_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_294.png",Unknown_294
 https://gctxyc.liveplay.myqcloud.com/gc/emsyh_1/index.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3572.png",Unknown_3572
+https://gctxyc.liveplay.myqcloud.com/gc/emsyh_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_255.png",Unknown_255
 https://gctxyc.liveplay.myqcloud.com/gc/hssxf_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_308.png",Unknown_308
@@ -1554,6 +1602,8 @@ https://gctxyc.liveplay.myqcloud.com/gc/jyg04_1/index.m3u8?contentid=28201805160
 https://gctxyc.liveplay.myqcloud.com/gc/mdjxxmhjyxj_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3582.png",Unknown_3582
 https://gctxyc.liveplay.myqcloud.com/gc/mdjxxmhjyxj_1/index.m3u8?contentid=2820180516001
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_265.png",Unknown_265
+https://gctxyc.liveplay.myqcloud.com/gc/taishan01_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3559.png",Unknown_3559
 https://gctxyc.liveplay.myqcloud.com/gc/taishan01_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_267.png",Unknown_267
@@ -1584,6 +1634,8 @@ https://gctxyc.liveplay.myqcloud.com/gc/wysyxdhp_1/index.m3u8
 https://gctxyc.liveplay.myqcloud.com/gc/wysyxdhp_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_248.png",Unknown_248
 https://gctxyc.liveplay.myqcloud.com/gc/yxhcyz_1/index.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3550.png",Unknown_3550
+https://gctxyc.liveplay.myqcloud.com/gc/yxhcyz_1/index.m3u8?contentid=2820180516001
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_279.png",Unknown_279
 https://gctxyc.liveplay.myqcloud.com/gc/zjjjjdl_1/index.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_3566.png",Unknown_3566
@@ -1996,6 +2048,8 @@ https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/53877bcf360845ab9c
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/53e06c3311284ab296a9160bd9d5ee81/1200.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1245.png",Unknown_1245
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/541797b800604546accd553c29136c84/1200.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_341.png",Unknown_341
+https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/54371858578a45d9b9de4b64f81863eb/1200.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_1045.png",Unknown_1045
 https://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/555d01d4d3ef41858384193e82686bf6/1200.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_383.png",Unknown_383
@@ -2776,8 +2830,6 @@ https://vdse.bdstatic.com/20e606730cb53b91bd4a4d2b0323e563.mp4?authorization=bce
 https://vdse.bdstatic.com/25f5ae931f851bf09c48abaebe5d6f8d.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2Fbeb15438a125af0e53bc38c98b3f304da2e2c0f1f61103ce81a9df486dc138a3
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_215.png",Unknown_215
 https://vdse.bdstatic.com/363480020aaa13240bbe51121d3e2a65.mp4?authorization=bce-auth-v1%2Ffb297a5cc0fb434c971b8fa103e8dd7b%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F092913f5016d684c2e159452cc811ca27c7e7b8d9172bcd8211c87b7cae449bd
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_193.png",Unknown_193
-https://vdse.bdstatic.com/4d056936c317b35f886ced83147ad7e8.mp4?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2020-01-31T14%3A42%3A28Z%2F-1%2Fhost%2F13c0f2dda852b6fdbcd7422de8ac3a48437304b4c38728deeedb6558c47a9eb9
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_195.png",Unknown_195
 https://vdse.bdstatic.com/570e05ef514db00b14c9c10d1aef7f1f.mp4?authorization=bce-auth-v1%2Ffb297a5cc0fb434c971b8fa103e8dd7b%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2Fd5332371b8e0882511e0b75041fcd24f0899fa4237f56edacb89b6734f95ca97
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Unknown_205.png",Unknown_205
@@ -2844,6 +2896,10 @@ http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 http://playtv-live.ifeng.com:80/live/06OLEEWQKN4.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://playtv-live.ifeng.com:80/live/06OLEGEGM4G.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰衛視中文台.png",鳳凰衛視中文台
+http://bxtv.3a.ink/api.php?id=fhzw
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰衛視資訊台.png",鳳凰衛視資訊台
+http://bxtv.3a.ink/api.php?id=fhzx
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰中文.png",鳳凰中文
 http://r.jdshipin.com/cCCzW
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰資訊.png",鳳凰資訊
@@ -2856,8 +2912,6 @@ http://cdn6.163189.xyz/163189/fhzw
 http://cdn6.163189.xyz/163189/fhzx
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰香港高清.png",鳳凰香港高清
 http://cdn6.163189.xyz/163189/fhhk
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰電影.png",鳳凰電影
-http://iot-mqqt.111yao.cn:8080/live/diyp_fhdy.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰衛視台.png",鳳凰衛視台
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/特種兵之火鳳凰.png",特種兵之火鳳凰
@@ -2870,6 +2924,8 @@ http://playtv-live.ifeng.com/live/06OLEGEGM4G_audio.m3u8
 http://pull-vivek.speedws.com/live/aaafhzx.flv
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰香港.png",鳳凰香港
 http://pull-vivek.speedws.com/live/aaafhxg.flv
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/鳳凰衛視.png",鳳凰衛視
+http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
 https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/660d6ade0cd4630008f4a127/master.m3u8?appName=web&appVersion=9.19.0&deviceDNT=0&deviceId=78b29450-7022-4485-b983-23f30e23925f&deviceMake=firefox&deviceModel=web&deviceType=web&deviceVersion=147.0.0&serverSideAds=false&sid=3eca9ff8-84f8-400f-8847-b4573c6767ac
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/Jade Fever.png",Jade Fever
@@ -2884,9 +2940,13 @@ https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6
 https://stream1.freetv.fun/3892090ddf2c069555068609c569dd1d5c39c7a4b2d3d614fdec6a1337b715be.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]鳳凰中文.png",[BD]鳳凰中文
 https://stream1.freetv.fun/c8ad10f8d135ebbea6b77779874c1d8a6da07d925786ac11f855c0dfa87b4487.m3u8
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[VGA]鳳凰中文.png",[VGA]鳳凰中文
+https://stream1.freetv.fun/a4e7e8c192fe538f4878412af5f611bf10948212e980cf029ac0500a7cb8962f.ctv
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[HD]鳳凰資訊.png",[HD]鳳凰資訊
 https://stream1.freetv.fun/320c213f4bb29b607f6c659b2a94918fc7f922c996ede3738fdff2ab9bd90217.ctv
-#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[SD]鳳凰電影.png",[SD]鳳凰電影
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[VGA]鳳凰資訊.png",[VGA]鳳凰資訊
+https://stream1.freetv.fun/7d3e0683dbf6e0636efa3bc17815aba2c44580449b0be83ed1e3ca97ed45bccc.ctv
+#EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[SD]鳳凰電影[geo-blocked].png",[SD]鳳凰電影[geo-blocked]
 https://stream1.freetv.fun/eb5c379a2d045382ce7f8ffa78e5b7d184a3c44fffe574d72e3fab54a7d696f7.m3u8
 #EXTINF:-1 group-title="其他" logo="https://epg.112114.xyz/logo/[BD]鳳凰香港 *sg.png",[BD]鳳凰香港 *sg
 https://stream1.freetv.fun/9b8c3d71546b4dd10e2ff194bdb79941d8455270835e35027622d509742ff377.m3u8
