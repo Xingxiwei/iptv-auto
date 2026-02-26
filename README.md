@@ -44,18 +44,6 @@
 
 ---
 
-## 📺 收錄頻道 (Supported Channels)
-
-本項目專注於香港本地頻道，並根據習慣進行了排序：
-
-1.  **TVB 系列**: 翡翠台 (Jade), 明珠台 (Pearl), 無線新聞台 (News), J2, 財經體育資訊台
-2.  **ViuTV 系列**: ViuTV (99台), ViuTVsix (96台)
-3.  **HOY TV 系列**: HOY TV (77台), HOY 資訊台 (78台), 76台
-4.  **RTHK 系列**: 港台電視 31, 32, 33
-5.  **Now TV 系列**: Now 新聞台, Now 直播台
-
----
-
 ## ✨ 項目特點 (Features)
 
 *   **🤖 全自動維護**: 利用 GitHub Actions 每天定時抓取最新源。
