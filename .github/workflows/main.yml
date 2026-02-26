@@ -36,16 +36,16 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # 1. 將新爬返嚟嘅 File 搬入「臨時儲物櫃」(Stash)，令環境變返乾淨
+        # 1. 搬入儲物櫃
         git stash
 
-        # 2. 依家環境乾淨晒，即刻 Pull 雲端最新紀錄
+        # 2. 同步雲端
         git pull origin main --rebase
 
-        # 3. 將儲物櫃嘅 File 攞返出嚟
+        # 3. 攞返出嚟
         git stash pop || echo "No changes to pop"
 
-        # 4. 重新 Add 同埋執行 Commit 邏輯
+        # 4. 重新 Add 同 Commit (呢度乾淨晒喇)
         git add hk_live.m3u source_report.txt
         if git diff --staged --quiet; then
           echo "No changes to commit"
