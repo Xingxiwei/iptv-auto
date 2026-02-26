@@ -1,5 +1,5 @@
 IPTV 來源健康度分析報告
-生成時間: 2026-02-26 03:39:31.820974
+生成時間: 2026-02-26 04:13:24.374512
 ==================================================
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u
 狀態: 優質 | 活鏈: 44 | 死鏈: 14
@@ -8,13 +8,13 @@ IPTV 來源健康度分析報告
 狀態: 一般 | 活鏈: 2 | 死鏈: 58
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-7.m3u
-狀態: 優質 | 活鏈: 11 | 死鏈: 43
+狀態: 優質 | 活鏈: 10 | 死鏈: 44
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-11.m3u
 狀態: 優質 | 活鏈: 12 | 死鏈: 4
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202005.m3u
-狀態: 一般 | 活鏈: 2 | 死鏈: 28
+狀態: 一般 | 活鏈: 3 | 死鏈: 27
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202003.m3u
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 3
@@ -32,7 +32,7 @@ IPTV 來源健康度分析報告
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 4
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/3100%E4%B8%AA%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u8
-狀態: 優質 | 活鏈: 968 | 死鏈: 1670
+狀態: 優質 | 活鏈: 1064 | 死鏈: 1574
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/billy21/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%B9%BF%E4%B8%9C%E8%81%94%E9%80%9A.m3u
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 1
@@ -47,7 +47,7 @@ IPTV 來源健康度分析報告
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 3
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u
-狀態: 優質 | 活鏈: 55 | 死鏈: 27
+狀態: 優質 | 活鏈: 58 | 死鏈: 24
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 1
@@ -65,7 +65,7 @@ IPTV 來源健康度分析報告
 狀態: ⚪ 無符合關鍵字頻道
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u
-狀態: 一般 | 活鏈: 1 | 死鏈: 3
+狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 4
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8
 狀態: ⚠️ 建議刪除 (全死) | 活鏈: 0 | 死鏈: 1
@@ -74,7 +74,7 @@ IPTV 來源健康度分析報告
 狀態: 一般 | 活鏈: 3 | 死鏈: 0
 --------------------------------------------------
 來源: https://epg.pw/test_channels_hong_kong.m3u
-狀態: 優質 | 活鏈: 41 | 死鏈: 3
+狀態: 優質 | 活鏈: 35 | 死鏈: 9
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8
 狀態: 一般 | 活鏈: 3 | 死鏈: 2
@@ -101,7 +101,7 @@ IPTV 來源健康度分析報告
 狀態: ⚪ 無符合關鍵字頻道
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u
-狀態: 優質 | 活鏈: 22 | 死鏈: 0
+狀態: 優質 | 活鏈: 21 | 死鏈: 1
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u
 狀態: ⚪ 無符合關鍵字頻道
@@ -110,7 +110,7 @@ IPTV 來源健康度分析報告
 狀態: ⚪ 無符合關鍵字頻道
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u
-狀態: 一般 | 活鏈: 4 | 死鏈: 7
+狀態: 一般 | 活鏈: 5 | 死鏈: 6
 --------------------------------------------------
 來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u
 狀態: ⚪ 無符合關鍵字頻道
