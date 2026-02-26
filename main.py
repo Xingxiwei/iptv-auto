@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor  # 多線程核心，提升掃
 cc = OpenCC('s2t')
 
 # --- 1. 網路訂閱源 (完整 42 條 URL，絕無縮略) ---
+# 呢度匯集咗 GitHub 同網上熱門嘅港澳台 M3U 訂閱源
 SOURCE_URLS = [
     "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u",
     "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82023.m3u",
@@ -55,7 +56,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv2.m3u"
 ]
 
-# --- 2. 手動補充源 (記得將你原本嗰幾十個貼返喺度) ---
+# --- 2. 手動補充源 ---
+# 針對一啲網上訂閱源未必有，或者好穩定嘅特定 Link 進行手動注入
 MANUAL_SINGLE_CHANNELS = [
     {"name": "翡翠台", "url": "https://HaNoiIPTV.short.gy/Que_huong_HaNoiIPTV-TVB_Fei_Cui_Tai"},
     {"name": "翡翠台", "url": "http://php.jdshipin.com/TVOD/iptv.php?id=fct2"},
@@ -63,178 +65,193 @@ MANUAL_SINGLE_CHANNELS = [
 ]
 
 # --- 3. 關鍵字與黑名單設定 ---
-KEYWORDS = ["ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", "無線", "有線", "翡翠", "明珠", "港台", "廣東", "珠江", "廣州", "大灣區", "鳳凰", "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", "澳視", "澳門", "TDM", "澳亞"]
-BLOCK_KEYWORDS = ["FOX", "UHD", "8K", "浙江", "杭州", "深圳", "CCTV", "延时", "測試"]
-ORDER_KEYWORDS = ["廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方", "港台電視", "翡翠", "無線新聞", "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", "民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來", "澳視", "澳門", "TDM", "澳亞"]
+# KEYWORDS: 決定邊啲頻道「有資格」被收錄
+KEYWORDS = [
+    "ViuTV", "HOY", "RTHK",       # 香港主流免費台
+    "Jade", "Pearl",              # TVB 翡翠/明珠英文名
+    "J2", "J5",                   # 無線副頻道
+    "Now", "無線", "有線",         # 品牌關鍵字
+    "翡翠", "明珠", "港台",         # 核心台名
+    "廣東", "珠江", "廣州", "大灣區", # 廣東粵語區熱門台
+    "鳳凰", "民視", "東森", "三立",  # 鳳凰衛視及台灣大台
+    "中視", "公視", "TVBS", "緯來", 
+    "年代", "中天", "非凡", 
+    "澳視", "澳門", "TDM", "澳亞"   # 澳門本地台
+]
+
+# BLOCK_KEYWORDS: 即使命中關鍵字，如果包含以下字眼就「一票否決」
+BLOCK_KEYWORDS = [
+    "FOX", "UHD", "8K",           # 硬件要求太高或內容不符
+    "浙江", "杭州", "深圳",         # 排除非目標地區嘅內地台
+    "CCTV", "延时", "測試"         # 排除央視及無效測試訊號
+]
+
+# ORDER_KEYWORDS: 決定排位順序，排得愈前，在 TVBox 入面嘅「線路1」就愈大機會係佢
+ORDER_KEYWORDS = [
+    "廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方",  # 優先度 1: 粵語地區最快最穩嘅源
+    "港台電視", "翡翠", "無線新聞", "明珠",              # 優先度 2: 香港人核心必睇台
+    "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", # 優先度 3: 香港其他娛樂台
+    "民視", "中視", "華視", "公視", "TVBS", "三立",       # 優先度 4: 台灣熱門台
+    "東森", "年代", "壹電視", "非凡", "中天", "緯來",      # 優先度 5: 台灣其他頻道
+    "澳視", "澳門", "TDM", "澳亞"                        # 優先度 6: 澳門系列
+]
 
 # --- 4. 靜態官方源 ---
+# 呢啲係官方長效連結，唔需要測速去重，直接放喺清單最頂
 STATIC_CHANNELS = [
     {"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8", "speed": 10}, 
     {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8", "speed": 10}
 ]
 
-# --- 核心邏輯區 ---
-
-# 模擬瀏覽器 Header，防止被拒絕存取
 COMMON_HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
 
 def check_url(item):
     """
-    【測速函數】
-    - 使用 requests.get 進行連線測試
-    - timeout=1.5 秒：平衡掃描速度與成功率
-    - stream=True：只攞 Response Header，唔下載內容，慳流量
+    【測速邏輯】
+    - 利用 HTTP GET 同步測試連線延遲
+    - 使用 stream=True 避免下載整個 M3U8 文件，只讀取 Header 即刻關閉，極速慳流量
     """
     try:
         start_time = time.time()
+        # 1.5 秒超時係黃金分割點：超過 1.5 秒嘅源在電視播通常都會轉圈卡餐死，直接放棄
         response = requests.get(item['url'], timeout=1.5, headers=COMMON_HEADERS, stream=True)
         if response.status_code == 200:
-            # 計算回應時間 (ms)
             item['speed'] = int((time.time() - start_time) * 1000)
             response.close()
             return item
     except:
-        pass  # 發生錯誤 (例如連線超時) 直接略過
+        pass
     return None
 
 def fetch_and_parse():
     """
-    【主爬蟲與資料處理邏輯】
-    - 遍歷 SOURCE_URLS 下載 M3U 內容
-    - 使用 ThreadPoolExecutor (30線程) 進行並發測速
-    - 【重要】優化命名邏輯：如果 URL 重複，會保留反應最快嗰個源嘅台名
+    【爬蟲核心】下載 -> 解析 -> 測速 -> 篩選 -> 去重
     """
-    all_valid_dict = {}  # 格式：{ "url": {item_data} }，用字典嚟自動去重
-    report_data = []     # 儲存健康度報告內容
+    all_valid_dict = {}  # 格式: { "url": {item_info} } -> 確保同一個 URL 唔會重複出現
+    report_data = []     
     
-    print("🚀 啟動 30 線程並發全方位掃描 (優勝劣汰命名版)...", flush=True)
+    print("🚀 啟動 30 線程並發全方位掃描 (TVBox 優化版)...", flush=True)
     
     for index, source in enumerate(SOURCE_URLS):
         print(f"\n📡 [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
-        # 針對台灣專用源做特別處理
+        # 針對台灣專用源做特別處理，即使名唔中關鍵字，只要係呢個源都入選
         is_taiwan_source = "tw.m3u" in source.lower()
         all_found_raw_data = [] 
         
         try:
-            # 下載 M3U 檔案，15秒超時防止卡死
             r = requests.get(source, timeout=15, headers=COMMON_HEADERS)
             r.encoding = 'utf-8'
             if r.status_code != 200:
-                report_data.append(f"來源: {source} | ❌ 下載失敗 (HTTP {r.status_code})")
+                report_data.append(f"📡 來源: {source}\n   ❌ 下載失敗 (HTTP {r.status_code})\n{'─'*40}")
                 continue
             
-            # 解析 M3U 行列
+            # 解析 M3U 內容
             lines = r.text.split('\n')
             current_name = ""
             for line in lines:
                 line = line.strip()
                 if line.startswith("#EXTINF"):
-                    # 提取台名
                     if ',' in line:
                         raw_name = line.split(',')[-1].strip()
-                        # 簡轉繁，並統一「台」字
+                        # 繁簡統一 + 修正「臺」字，確保合併線路時名一致
                         current_name = cc.convert(raw_name).replace('臺', '台')
                 elif line.startswith("http") and current_name:
-                    # 將名同 URL 執埋一齊
                     all_found_raw_data.append({"name": current_name, "url": line})
                     current_name = ""
 
             if not all_found_raw_data:
-                report_data.append(f"來源: {source} | ⚪ 此源為空")
+                report_data.append(f"📡 來源: {source}\n   ⚪ 此源為空\n{'─'*40}")
                 continue
 
-            # --- 啟動並發測速 ---
+            # --- 並發測速：30 匹馬同時跑，比傳統單線程快 3000% ---
             print(f"    ⏳ 盲測 {len(all_found_raw_data)} 條連結...", end="", flush=True)
             with ThreadPoolExecutor(max_workers=30) as executor:
-                # 把任務交給 30 個線程同步執行
                 results = list(executor.map(check_url, all_found_raw_data))
             
-            # 過濾出活著的連結 (results 入面唔係 None 嘅)
             valid_this_source = [r for r in results if r is not None]
-            matched_count = 0
-            
+            matched_items_names = []
+            missed_names = []
+
             for item in valid_this_source:
-                # 關鍵字命中檢查
+                # 關鍵字過濾邏輯
                 is_match = any(k.lower() in item['name'].lower() for k in KEYWORDS)
-                # 黑名單排除檢查
                 is_blocked = any(b.lower() in item['name'].lower() for b in BLOCK_KEYWORDS)
                 
                 if (is_match or is_taiwan_source) and not is_blocked:
                     url = item['url']
-                    # 【核心去重邏輯】
-                    # 如果 URL 係第一次見，或者呢個新源比之前見過嘅更快
+                    # 【去重邏輯】如果 URL 重複，保留測速最快嗰個對應嘅台名
                     if url not in all_valid_dict or item['speed'] < all_valid_dict[url]['speed']:
-                        # 覆蓋資料，確保保留最快線路嘅台名同速度
                         all_valid_dict[url] = item 
-                    matched_count += 1
+                    matched_items_names.append(item['name'])
+                else:
+                    missed_names.append(item['name'])
 
-            report_data.append(f"來源: {source} | ✅ 命中 {matched_count} / 活鏈 {len(valid_this_source)}")
-            print(f"\r    ✅ 完成：發現 {len(valid_this_source)} 個活鏈 (其中 {matched_count} 個入選)")
+            # 構建 Emoji 報告
+            report_entry = f"📡 來源: {source}\n"
+            report_entry += f"   🔗 活鏈數: {len(valid_this_source)} 條\n"
+            report_entry += f"   ✅ 命中 ({len(matched_items_names)} 個): {', '.join(matched_items_names[:15])}...\n"
+            if missed_names:
+                report_entry += f"   🔍 落選 ({len(missed_names)} 個): {', '.join(missed_names)}\n"
+            report_entry += f"{'─'*40}"
+            report_data.append(report_entry)
+
+            print(f"\r    ✅ 完成：命中 {len(matched_items_names)} / 活鏈 {len(valid_this_source)}")
 
         except Exception as e:
-            report_data.append(f"來源: {source} | ❌ 出錯: {str(e)}")
+            report_data.append(f"📡 來源: {source}\n   ❌ 出錯: {str(e)}\n{'─'*40}")
             print(f"\r    ❌ 出錯，已跳過")
 
-    # 寫入 source_report.txt 健康度報告
+    # 將掃描結果保存為 txt，方便檢查「落選名單」嚟調整關鍵字
     with open("source_report.txt", "w", encoding="utf-8") as f:
-        f.write(f"IPTV 全掃描報告 - {datetime.datetime.now()}\n{'='*50}\n\n" + "\n".join(report_data))
+        f.write(f"IPTV 詳細掃描報告 - {datetime.datetime.now()}\n{'='*50}\n\n" + "\n".join(report_data))
             
-    # 將字典入面嘅 item 轉返做 List 傳出去
     return list(all_valid_dict.values())
 
 def get_sort_key(item):
     """
-    【權重排序計算法】
-    - gp: 大分組權重 (廣東100, 香港200...)
-    - kp: 台名權重 (依照 ORDER_KEYWORDS 順序)
-    - speed: 速度微調 (除以一百萬，確保同台快者排先)
+    【排序算法權重設計】
+    數值愈細，排得愈前。
+    1. gp (大組): 廣東=100, 香港=200, 台灣=300... (確保分組整齊)
+    2. kp (關鍵字權重): 根據 ORDER_KEYWORDS 嘅索引值 (0, 1, 2...)
+    3. speed (測速): 同台比較時，0.0001ms 嘅差距都會決定邊條係「線路1」
     """
     name, speed = item["name"], item.get('speed', 9999)
-    # 1. 決定大分組 GP
+    # 分大組
     if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): gp = 100
     elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "viu", "HOY", "Now", "J2", "J5"]): gp = 200
     elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): gp = 300
     elif any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): gp = 400
     else: gp = 500
     
-    # 2. 決定台名排序 KP
+    # 算組內細分排序
     kp = 99
     for i, k in enumerate(ORDER_KEYWORDS):
         if k.lower() in name.lower():
             kp = i
             break
-            
-    # 回傳總權重數值 (愈細排愈前)
     return gp + kp + (speed / 1000000)
 
 def generate_m3u(valid_channels):
     """
-    【TVBox 優化版：同名多線路】
-    1. 將所有台按「台名」進行歸類。
-    2. 每個台名下面，按「速度」由快到慢排序。
-    3. 輸出時，相同台名的 EXTINF 會排埋一齊，TVBox 就會自動識別為線路 1, 2, 3...
+    【輸出 M3U】
+    TVBox 合併線路靠嘅係「台名一致」。
+    我哋輸出時已經按 gp -> kp -> speed 排序，所以同名台會排埋一齊。
     """
     final_list = list(STATIC_CHANNELS) + valid_channels
-    
-    # 【關鍵步 1】先按權重排序 (大組 -> 小組 -> 速度)
     final_list.sort(key=get_sort_key)
     
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
     
     groups = ["廣東/廣州", "香港", "台灣", "澳門", "其他"]
-    
-    # 紀錄已經寫入咗嘅 URL，防止絕對重複
-    written_urls = set()
+    written_urls = set() # 二次檢查 URL 唯一性
 
     for g in groups:
         for item in final_list:
-            name, speed, url = item["name"], item.get('speed', 0), item["url"]
+            name, url = item["name"], item["url"]
+            if url in written_urls: continue
             
-            if url in written_urls:
-                continue
-            
-            # 判斷分組標籤
+            # 動態分配 group-title
             if any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): ig = "澳門"
             elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): ig = "台灣"
             elif any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): ig = "廣東/廣州"
@@ -242,9 +259,7 @@ def generate_m3u(valid_channels):
             else: ig = "其他"
             
             if ig == g:
-                # 注意：TVBox 合併線路係靠「台名」一致。
-                # 我哋唔好喺台名後面加 (ms)，因為加咗 (ms) 每個名都唔同，TVBox 就合併唔到。
-                # 我哋將 ms 寫喺 EXTINF 內部或者直接唔寫，確保台名乾淨。
+                # 輸出格式符合 TVBox/IPTV 播放器標準
                 content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name}\n{url}\n'
                 written_urls.add(url)
     
@@ -252,23 +267,18 @@ def generate_m3u(valid_channels):
         f.write(content)
     print(f"\n🎉 TVBox 多線路版本已儲存！同名頻道將自動合併。")
 
-# --- 程式主入口 ---
 if __name__ == "__main__":
-    # 1. 執行 42 個源嘅全自動掃描
+    # 流程：掃描訂閱源 -> 注入手動源 -> 測速過濾 -> 排序輸出
     live_channels = fetch_and_parse()
     
-    # 2. 處理手動源
     print(f"\n📦 正在檢查並注入手動補充源...", flush=True)
     existing_urls = {c['url'] for c in live_channels}
     for item in MANUAL_SINGLE_CHANNELS:
-        # 手動源台名簡轉繁
         item['name'] = cc.convert(item['name']).replace('臺', '台')
-        # 如果網路源冇掃到呢條 Link，就幫佢測速並加入
         if item['url'] not in existing_urls:
             checked = check_url(item)
             if checked:
                 live_channels.append(checked)
                 print(f"    [+] 手動源注入成功: {item['name']} ({checked['speed']}ms)")
     
-    # 3. 輸出最終 M3U 播放清單
     generate_m3u(live_channels)
