@@ -86,12 +86,12 @@ def check_url(item):
     """
     【單一連結測速函數】
     1. 紀錄發出請求嘅時間。
-    2. 使用 requests.get 嘗試連線，timeout=2 秒 (防止卡死)。
+    2. 使用 requests.get 嘗試連線，timeout=1.5 秒 (防止卡死)。
     3. stream=True 只獲取回應頭 (Headers)，不下載內容以節省流量同時間。
     """
     try:
         start_time = time.time()
-        response = requests.get(item['url'], timeout=2, headers=COMMON_HEADERS, stream=True)
+        response = requests.get(item['url'], timeout=1.5, headers=COMMON_HEADERS, stream=True)
         if response.status_code == 200:
             # 毫秒數 = (當前時間 - 開始時間) * 1000
             item['speed'] = int((time.time() - start_time) * 1000)
