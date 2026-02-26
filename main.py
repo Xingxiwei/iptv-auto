@@ -1,6 +1,7 @@
 import requests
 import re
 import datetime
+import time  # 必須匯入，用嚟計時
 from opencc import OpenCC
 from concurrent.futures import ThreadPoolExecutor
 
@@ -90,8 +91,8 @@ ORDER_KEYWORDS = ["廣東", "珠江", "廣州", "廣東衛視", "大灣區", "�
                   "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來", 
                   "澳視", "澳門", "TDM", "澳亞"]
 
-STATIC_CHANNELS = [{"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"}, 
-                   {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}
+STATIC_CHANNELS = [{"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8", "speed": 10}, 
+                   {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8", "speed": 10}
                   ]
 
 # --- 核心邏輯區 ---
@@ -101,15 +102,16 @@ COMMON_HEADERS = {
 }
 
 def check_url(item):
-    """【功能】檢查網址有效性"""
+    """【功能】檢查網址有效性並測速"""
     url = item['url']
     headers = COMMON_HEADERS.copy()
     headers['Referer'] = url
     try:
-        response = requests.head(url, timeout=2, headers=headers, allow_redirects=True)
-        if response.status_code == 200: return item
-        response = requests.get(url, timeout=3, headers=headers, stream=True)
+        start_time = time.time() # 記錄開始時間用嚟計 delay
+        # 原本只用 HEAD，依家改用 GET (stream=True) 測速更準，2秒超時費事老人家等
+        response = requests.get(url, timeout=2, headers=headers, stream=True)
         if response.status_code == 200:
+            item['speed'] = int((time.time() - start_time) * 1000) # 儲存毫秒數
             response.close()
             return item
     except: pass
@@ -164,6 +166,9 @@ def fetch_and_parse():
                     results = list(executor.map(check_url, current_candidates))
                 
                 valid_ones = [r for r in results if r is not None]
+                # 喺 Source 內部先根據速度排一次
+                valid_ones.sort(key=lambda x: x.get('speed', 9999))
+                
                 count_valid = len(valid_ones)
                 count_dead = len(current_candidates) - count_valid
                 all_valid_channels.extend(valid_ones)
@@ -204,6 +209,7 @@ def generate_m3u(valid_channels):
     for current_group in groups:
         for item in final_list:
             name = item["name"]
+            speed = item.get('speed', 0)
             if any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): ig = "澳門"
             elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): ig = "台灣"
             elif any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): ig = "廣東/廣州"
@@ -211,14 +217,18 @@ def generate_m3u(valid_channels):
             else: ig = "其他"
 
             if ig == current_group:
-                content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name}\n{item["url"]}\n'
+                # 頻道名後面顯示測速毫秒數，方便除錯
+                content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name} ({speed}ms)\n{item["url"]}\n'
 
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
         f.write(content)
     print(f"\n🎉 大功告成！檔案已儲存為 hk_live.m3u", flush=True)
 
 def get_sort_key(item):
+    """【核心改動】排序邏輯：分組優先 -> 關鍵字優先 -> 測速最快優先"""
     name = item["name"]
+    speed = item.get('speed', 9999)
+
     if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): gp = 100
     elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): gp = 200
     elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): gp = 300
@@ -229,7 +239,8 @@ def get_sort_key(item):
         if k.lower() in name.lower():
             kp = i
             break
-    return gp + kp
+    # gp 同 kp 決定咗大分類同頻道名順序，最後加上 speed 權重等快嘅排先
+    return gp + kp + (speed / 1000000)
 
 if __name__ == "__main__":
     # 1. 執行邊爬邊檢測
@@ -241,13 +252,14 @@ if __name__ == "__main__":
     for item in MANUAL_SINGLE_CHANNELS:
         item['name'] = cc.convert(item['name']).replace('臺', '台')
         if item['url'] not in existing_urls:
-            # 手動源都要 Check 下死唔死
-            if check_url(item):
-                live_channels.append(item)
+            # 手動源都要 Check 下死唔死同測速
+            checked = check_url(item)
+            if checked:
+                live_channels.append(checked)
                 existing_urls.add(item['url'])
-                print(f"  [+] 注入成功: {item['name']}")
+                print(f"    [+] 注入成功: {item['name']} ({checked.get('speed')}ms)")
         else:
-            print(f"  [!] 重複，跳過: {item['name']}")
+            print(f"    [!] 重複，跳過: {item['name']}")
 
     # 3. 寫入檔案
     generate_m3u(live_channels)
