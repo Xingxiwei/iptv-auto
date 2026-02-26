@@ -31,19 +31,18 @@ jobs:
     - name: Run script
       run: python main.py
 
-    - name: Commit and push
+  - name: Commit and push
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # 1. 先 Pull，確保同雲端同步，避免 rejected 錯誤
+        # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
+        git add hk_live.m3u source_report.txt
+
+        # 2. 依家先至做 Pull Rebase，Git 就識處理喇
         git pull origin main --rebase
 
-        # 2. 將 m3u 同埋健康報告都加埋入去（方便你自己睇返邊啲源死咗）
-        git add hk_live.m3u source_report.txt
-        
         # 3. 提交變動
-        # 使用 if 判斷係費事「無嘢改」嘅時候夾硬 commit 會報錯
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
