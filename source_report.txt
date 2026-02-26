@@ -1,45 +1,45 @@
-IPTV 全掃描報告 - 2026-02-26 08:05:52.685802
+IPTV 全掃描報告 - 2026-02-26 08:48:52.697429
 ==================================================
 
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u | ✅ 命中 39 / 活鏈 117
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u | ✅ 命中 39 / 活鏈 113
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82023.m3u | ✅ 命中 5 / 活鏈 19
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-7.m3u | ✅ 命中 12 / 活鏈 20
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-11.m3u | ✅ 命中 26 / 活鏈 41
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-11.m3u | ✅ 命中 26 / 活鏈 43
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202005.m3u | ✅ 命中 4 / 活鏈 41
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202003.m3u | ✅ 命中 4 / 活鏈 48
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96.m3u | ✅ 命中 0 / 活鏈 65
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202003.m3u | ✅ 命中 4 / 活鏈 49
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96.m3u | ✅ 命中 0 / 活鏈 64
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/1300%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88%E3%80%90%E5%85%A8%E9%83%A84k%E8%80%81%E7%94%B5%E8%84%91%E5%88%AB%E7%94%A8%E3%80%91.m3u8 | ✅ 命中 2 / 活鏈 24
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/5000%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u | ✅ 命中 3 / 活鏈 1476
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/5000%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u | ✅ 命中 4 / 活鏈 1471
 來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E6%88%91%E7%9A%84%E6%92%AD%E6%94%BE%E6%BA%90.m3u8 | ✅ 命中 0 / 活鏈 0
-來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/3100%E4%B8%AA%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u8 | ✅ 命中 932 / 活鏈 986
+來源: https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/3100%E4%B8%AA%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u8 | ✅ 命中 1087 / 活鏈 1159
 來源: https://raw.githubusercontent.com/billy21/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%B9%BF%E4%B8%9C%E8%81%94%E9%80%9A.m3u | ✅ 命中 0 / 活鏈 0
-來源: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u | ✅ 命中 78 / 活鏈 463
+來源: https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u | ✅ 命中 79 / 活鏈 434
 來源: https://raw.githubusercontent.com/vicjl/myIPTV/refs/heads/main/CNTV.m3u | ✅ 命中 0 / 活鏈 0
 來源: https://raw.githubusercontent.com/vicjl/myIPTV/refs/heads/main/IPTV-all.m3u | ✅ 命中 0 / 活鏈 31
-來源: https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u | ✅ 命中 101 / 活鏈 1140
-來源: https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u | ✅ 命中 0 / 活鏈 44
-來源: https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u | ✅ 命中 64 / 活鏈 780
-來源: https://iptv-org.github.io/iptv/index.m3u | ✅ 命中 47 / 活鏈 8987
+來源: https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u | ✅ 命中 102 / 活鏈 1126
+來源: https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u | ✅ 命中 0 / 活鏈 43
+來源: https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u | ✅ 命中 57 / 活鏈 568
+來源: https://iptv-org.github.io/iptv/index.m3u | ✅ 命中 47 / 活鏈 8993
 來源: https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8 | ⚪ 此源為空
 來源: https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u | ✅ 命中 0 / 活鏈 0
-來源: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u | ✅ 命中 2 / 活鏈 4
-來源: https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8 | ✅ 命中 1 / 活鏈 1
-來源: https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u | ✅ 命中 10 / 活鏈 576
-來源: https://epg.pw/test_channels_hong_kong.m3u | ✅ 命中 34 / 活鏈 88
-來源: https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8 | ✅ 命中 4 / 活鏈 43
+來源: https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u | ✅ 命中 0 / 活鏈 2
+來源: https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8 | ✅ 命中 0 / 活鏈 0
+來源: https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u | ✅ 命中 11 / 活鏈 575
+來源: https://epg.pw/test_channels_hong_kong.m3u | ✅ 命中 34 / 活鏈 90
+來源: https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8 | ✅ 命中 4 / 活鏈 40
 來源: https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u | ✅ 命中 22 / 活鏈 51
-來源: https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u | ✅ 命中 9 / 活鏈 416
+來源: https://raw.githubusercontent.com/xiweiwong/iptv/refs/heads/master/iptv.m3u | ✅ 命中 9 / 活鏈 407
 來源: https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u | ✅ 命中 0 / 活鏈 2
-來源: https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u | ✅ 命中 27 / 活鏈 60
+來源: https://raw.githubusercontent.com/Mitchll1214/m3u/main/港澳台.m3u | ✅ 命中 25 / 活鏈 58
 來源: https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u | ✅ 命中 0 / 活鏈 14
-來源: https://iptv-org.github.io/iptv/countries/hk.m3u | ✅ 命中 1 / 活鏈 2
+來源: https://iptv-org.github.io/iptv/countries/hk.m3u | ✅ 命中 0 / 活鏈 1
 來源: https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u | ⚪ 此源為空
-來源: https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u | ✅ 命中 30 / 活鏈 75
-來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u | ✅ 命中 98 / 活鏈 1125
+來源: https://raw.githubusercontent.com/YueChan/Live/main/GNTV.m3u | ✅ 命中 30 / 活鏈 73
+來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u | ✅ 命中 101 / 活鏈 1137
 來源: https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u | ✅ 命中 0 / 活鏈 0
-來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u | ✅ 命中 92 / 活鏈 790
-來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u | ✅ 命中 21 / 活鏈 417
-來源: https://iptv-org.github.io/iptv/countries/tw.m3u | ✅ 命中 12 / 活鏈 12
+來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u | ✅ 命中 92 / 活鏈 771
+來源: https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u | ✅ 命中 20 / 活鏈 414
+來源: https://iptv-org.github.io/iptv/countries/tw.m3u | ✅ 命中 13 / 活鏈 13
 來源: https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/ku9.m3u | ✅ 命中 0 / 活鏈 0
 來源: https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv.m3u | ⚪ 此源為空
 來源: https://raw.githubusercontent.com/melody0709/cmcc_iptv_auto_py/main/tv2.m3u | ✅ 命中 0 / 活鏈 0
