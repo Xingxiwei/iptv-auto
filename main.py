@@ -101,6 +101,7 @@ def check_url(item):
 def fetch_and_parse():
     """【功能】邊爬源邊檢測死鏈，咁你就知死鏈係邊份 Source 嚟嘅"""
     all_valid_channels = []
+    report_data = [] # 用嚟儲存每一份 Source 嘅成績表
     seen_urls = set()
     
     print("🚀 任務開始！正在進行即時抓取與效驗...", flush=True)
@@ -113,7 +114,11 @@ def fetch_and_parse():
         try:
             r = requests.get(source, timeout=15, headers=COMMON_HEADERS)
             r.encoding = 'utf-8'
-            if r.status_code != 200: continue
+            if r.status_code != 200: 
+                # 如果網址直頭連唔到 (404 或斷線)，記低佢
+                report_data.append(f"來源: {source}\n狀態: ❌ 無法存取 (HTTP {r.status_code})\n{'-'*50}")
+                print(f"    ❌ 連線失敗 (HTTP {r.status_code})")
+                continue
             
             lines = r.text.split('\n')
             current_name = ""
@@ -142,15 +147,28 @@ def fetch_and_parse():
                     results = list(executor.map(check_url, current_candidates))
                 
                 valid_ones = [r for r in results if r is not None]
-                dead_count = total_found - len(valid_ones)
+                count_valid = len(valid_ones)
+                count_dead = len(current_candidates) - count_valid
                 all_valid_channels.extend(valid_ones)
-                # 呢度就係你要嘅答案：話你聽呢份 Source 貢獻咗幾多死鏈
-                print(f"\r    ✅ 完成：{len(valid_ones)} 條可用 | 🚫 {dead_count} 條失效來自此來源")
-            else:
-                print("    ⚪ 此來源無符合關鍵字之頻道。")
                 
+                health = "優質" if count_valid > 5 else "一般"
+                if count_valid == 0: health = "⚠️ 建議刪除 (全死)"
+                
+                report_data.append(f"來源: {source}\n狀態: {health} | 活鏈: {count_valid} | 死鏈: {count_dead}\n{'-'*50}")
+                print(f"\r    ✅ 完成：{count_valid} 條可用...")
+            else:
+                report_data.append(f"來源: {source}\n狀態: ⚪ 無符合關鍵字頻道\n{'-'*50}")
+                print("    ⚪ 無符合關鍵字頻道")
+
         except Exception as e:
-            print(f"    ❌ 抓取錯誤: {e}", flush=True)
+            report_data.append(f"來源: {source}\n狀態: ❌ 抓取報錯 ({str(e)})\n{'-'*50}")
+            print(f"    ❌ 抓取錯誤: {e}")
+
+    # --- 所有 Source 爬完之後，一次過寫入報告檔案 ---
+    print(f"\n📝 正在生成來源健康度報告...", flush=True)
+    with open("source_report.txt", "w", encoding="utf-8") as f:
+        f.write(f"IPTV 來源健康度分析報告\n生成時間: {datetime.datetime.now()}\n{'='*50}\n")
+        f.write("\n".join(report_data))
             
     return all_valid_channels
 
