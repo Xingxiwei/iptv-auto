@@ -71,11 +71,28 @@ MANUAL_SINGLE_CHANNELS = [
     {"name": "大灣區衛視", "url": "http://gmxw.7766.org:808/hls/132/index.m3u8"}
 ]
 
-# 3. 關鍵字、黑名單、排序優先級
-KEYWORDS = ["ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", "凤凰","成人", "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", "中天", "非凡", "澳視", "澳門", "TDM", "澳亞"]
-BLOCK_KEYWORDS = ["FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now", "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies", "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric", "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock", "Winnipeg","Edmonton","RightNow","Times","True","Mindanow", "浙江", "杭州", "西湖", "深圳", "韶關", "CCTV", "CGTN", "華麗", "星河", "延时", "測試", "iHOY", "福建"]
-ORDER_KEYWORDS = ["廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方", "港台電視", "翡翠", "無線新聞", "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", "民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來", "澳視", "澳門", "TDM", "澳亞"]
-STATIC_CHANNELS = [{"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"}, {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}]
+# 3. 關鍵字、黑名單、排序優先級、官方链接
+KEYWORDS = ["ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", "无线", "無線", "有线",
+            "有線", "翡翠", "明珠", "港台", "廣東", "珠江", "广州", "廣州", "大灣區","鳳凰", 
+            "凤凰","成人", "民視", "東森", "三立", "中視", "公視", "TVBS", "緯來", "年代", 
+            "中天", "非凡", "澳視", "澳門", "TDM", "澳亞"]
+
+BLOCK_KEYWORDS = ["FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", "Reuters", 
+                  "Mirror", "ET Now", "The Now", "Right Now", "News Now", "Chopper", "Wow", 
+                  "UHD", "8K", "Career", "Comics", "Movies", "CBTV","Pearl","AccuWeather",
+                  "Jadeed","Curiosity","Electric", "Warfare","Knowledge","MagellanTV","70s",
+                  "80s","90s","Rock", "Winnipeg","Edmonton","RightNow","Times","True","Mindanow", 
+                  "浙江", "杭州", "西湖", "深圳", "韶關", "CCTV", "CGTN", "華麗", "星河", "延时", 
+                  "測試", "iHOY", "福建"]
+
+ORDER_KEYWORDS = ["廣東", "珠江", "廣州", "廣東衛視", "大灣區", "南方", "港台電視", "翡翠", "無線新聞", 
+                  "明珠", "J2", "J5", "財經", "Viu", "HOY", "奇妙", "有線", "Now", "民視", "中視", 
+                  "華視", "公視", "TVBS", "三立", "東森", "年代", "壹電視", "非凡", "中天", "緯來", 
+                  "澳視", "澳門", "TDM", "澳亞"]
+
+STATIC_CHANNELS = [{"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"}, 
+                   {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}
+                  ]
 
 # --- 核心邏輯區 ---
 
@@ -190,7 +207,7 @@ def generate_m3u(valid_channels):
             if any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): ig = "澳門"
             elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): ig = "台灣"
             elif any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): ig = "廣東/廣州"
-            elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): ig = "香港"
+            elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): ig = "香港"
             else: ig = "其他"
 
             if ig == current_group:
@@ -203,7 +220,7 @@ def generate_m3u(valid_channels):
 def get_sort_key(item):
     name = item["name"]
     if any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): gp = 100
-    elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "Viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): gp = 200
+    elif any(x in name for x in ["翡翠", "無線", "明珠", "港台", "RTHK", "viu", "HOY", "奇妙", "有線", "Now", "J2", "J5"]): gp = 200
     elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): gp = 300
     elif any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): gp = 400
     else: gp = 500
