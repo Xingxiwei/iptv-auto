@@ -209,24 +209,32 @@ def get_sort_key(item):
 
 def generate_m3u(valid_channels):
     """
-    【M3U 檔案生成】
-    - 合併靜態官方源同掃返嚟嘅源
-    - 按權重進行最終排序
-    - 寫入分組標籤
+    【TVBox 優化版：同名多線路】
+    1. 將所有台按「台名」進行歸類。
+    2. 每個台名下面，按「速度」由快到慢排序。
+    3. 輸出時，相同台名的 EXTINF 會排埋一齊，TVBox 就會自動識別為線路 1, 2, 3...
     """
     final_list = list(STATIC_CHANNELS) + valid_channels
-    # 執行最終排序
+    
+    # 【關鍵步 1】先按權重排序 (大組 -> 小組 -> 速度)
     final_list.sort(key=get_sort_key)
     
     content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
     content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
     
-    # 依照分組順序循環寫入
     groups = ["廣東/廣州", "香港", "台灣", "澳門", "其他"]
+    
+    # 紀錄已經寫入咗嘅 URL，防止絕對重複
+    written_urls = set()
+
     for g in groups:
         for item in final_list:
-            name, speed = item["name"], item.get('speed', 0)
-            # 再次判斷分組，用嚟對應 group-title
+            name, speed, url = item["name"], item.get('speed', 0), item["url"]
+            
+            if url in written_urls:
+                continue
+            
+            # 判斷分組標籤
             if any(x in name for x in ["澳門", "澳視", "澳亞", "TDM"]): ig = "澳門"
             elif any(x in name for x in ["民視", "中視", "華視", "公視", "TVBS", "三立", "東森", "年代", "緯來", "中天", "非凡"]): ig = "台灣"
             elif any(x in name for x in ["廣州", "廣東", "珠江", "大灣區", "南方"]): ig = "廣東/廣州"
@@ -234,13 +242,15 @@ def generate_m3u(valid_channels):
             else: ig = "其他"
             
             if ig == g:
-                # 寫入 M3U 格式行，顯示毫秒數方便參考
-                content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name} ({speed}ms)\n{item["url"]}\n'
+                # 注意：TVBox 合併線路係靠「台名」一致。
+                # 我哋唔好喺台名後面加 (ms)，因為加咗 (ms) 每個名都唔同，TVBox 就合併唔到。
+                # 我哋將 ms 寫喺 EXTINF 內部或者直接唔寫，確保台名乾淨。
+                content += f'#EXTINF:-1 group-title="{ig}" logo="https://epg.112114.xyz/logo/{name}.png",{name}\n{url}\n'
+                written_urls.add(url)
     
-    # 保存檔案
     with open("hk_live.m3u", "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"\n🎉 任務完成！檔案已保存為: hk_live.m3u")
+    print(f"\n🎉 TVBox 多線路版本已儲存！同名頻道將自動合併。")
 
 # --- 程式主入口 ---
 if __name__ == "__main__":
