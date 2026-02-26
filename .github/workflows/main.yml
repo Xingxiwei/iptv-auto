@@ -2,20 +2,20 @@ name: Update IPTV Source
 
 on:
   schedule:
-# 呢度設定每 12 小時行一次 (UTC 00:00 同 12:00)
+    # 呢度設定每 12 小時行一次 (UTC 00:00 同 12:00)
     - cron: '0 */12 * * *'
   workflow_dispatch: # 方便你隨時手動撳掣更新
 
 permissions:
-  contents: write # 允许写入仓库内容
+  contents: write # 允許寫入倉庫內容
 
 jobs:
   build:
-    runs-on: ubuntu-latest # 使用 Ubuntu 最新版本的虚拟机
+    runs-on: ubuntu-latest # 使用 Ubuntu 最新版本的虛擬機
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3  # 检出当前仓库的代码
+      uses: actions/checkout@v3  # 檢出當前倉庫嘅代碼
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -23,29 +23,29 @@ jobs:
         python-version: '3.9' # 使用 Python 3.9 版本
 
     - name: Install dependencies
-     # 加埋 --upgrade 確保 opencc 等庫係最新
+      # 加埋 --upgrade 確保 pip 同埋 opencc 等庫係最新
       run: |
         pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r requirements.txt # 安裝依賴項
 
     - name: Run script
-      run: python main.py
+      run: python main.py # 執行你份爬蟲腳本
 
     - name: Commit and push
       run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-  
-          # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
-          git add hk_live.m3u source_report.txt
-  
-          # 2. 依家先至做 Pull Rebase，Git 就識處理喇
-          git pull origin main --rebase
-  
-          # 3. 提交變動
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
+        git add hk_live.m3u source_report.txt
+
+        # 2. 依家先至做 Pull Rebase，確保同雲端同步，Git 就識處理喇
+        git pull origin main --rebase
+
+        # 3. 提交變動 (如果檔案有改過先至 Commit)
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
           git commit -m "Auto-update channel list $(date +'%Y-%m-%d %H:%M')"
           git push origin main
         fi
