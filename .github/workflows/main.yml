@@ -31,21 +31,21 @@ jobs:
     - name: Run script
       run: python main.py
 
-  - name: Commit and push
+    - name: Commit and push
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-
-        # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
-        git add hk_live.m3u source_report.txt
-
-        # 2. 依家先至做 Pull Rebase，Git 就識處理喇
-        git pull origin main --rebase
-
-        # 3. 提交變動
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+  
+          # 1. 先將新爬返嚟嘅檔案加進入暫存區，解決 "unstaged changes" 報錯
+          git add hk_live.m3u source_report.txt
+  
+          # 2. 依家先至做 Pull Rebase，Git 就識處理喇
+          git pull origin main --rebase
+  
+          # 3. 提交變動
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
           git commit -m "Auto-update channel list $(date +'%Y-%m-%d %H:%M')"
           git push origin main
         fi
